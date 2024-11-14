@@ -65,10 +65,8 @@
  
    slides.forEach((slide, i) => {
      slide.classList.remove("active");
-     slides.text.display="false";
      if (i === currentSlide) {
        slide.classList.add("active");
-       slides.text.display="true";
      }
    });
  }
