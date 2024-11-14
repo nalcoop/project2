@@ -82,9 +82,9 @@ var captionArray= [document.getElementById('walters'),document.getElementById('b
 
 function init(){
   var numImg= document.getElementById('museums').getElementsByClassName('museums').length;
-  for (var i=1; i<=numImg; i++){
+  for (var i=0; i<=numImg; i++){
     newImage[i]= new Image();
-    newImage[i].src= "assets/images/museums" + i + ".jpg";
+    newImage[i].src= "assets/images/museums" + i + ".jpeg";
   }
   document.getElementById('museums').innerHTML= captionArray[0];
 
@@ -95,8 +95,9 @@ function init(){
     console.log(num);
     
     var capNum= parseInt(num)-1;
-    console.log(capNum);
-    document.getElementById('museums').innerHTML= captionArray[capNum];
+    if(captionArray[capNum]){
+      document.getElementById('museums').innerHTML= captionArray[capNum];
+    }
 
   }
 }

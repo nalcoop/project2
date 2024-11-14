@@ -8,29 +8,29 @@
         <h3>For Viewing (Over 40+ museums)</h3>
        
             <p>Explore some of the city's best museums featuring Black artists and art history.</p>
-        <section id="museums"> 
+        <section onload="init();" id="museums"> 
             <!-- Walters Art Museum -->
             <figure>
-                <img class="museums" src="assets/images/museum1.jpg" alt="Walters Art Museum exterior">
+                <img onclick="changeMe(this)" class="museums" src="assets/images/museum1.jpg" alt="Walters Art Museum exterior">
                 <figcaption id="walters">Walters Art Museum: 600 N Charles St. Focused on diversity, inclusion, equity, and accessibility.</figcaption>
             </figure>
                
 
             <!-- Baltimore Museum of Art -->
             <figure>
-                <img class="museums" src="assets/images/museum2.jpeg" alt="Baltimore Museum of Art exterior">
+                <img onclick="changeMe(this)" class="museums" src="assets/images/museum2.jpeg" alt="Baltimore Museum of Art exterior">
                 <figcaption id="bma">Baltimore Museum of Art: 10 Art Museum Drive. A free local art museum on Johns Hopkins University Campus.</figcaption>
             </figure>
              
             <!-- National Great Blacks in Wax Museum -->
             <figure>
-                <img class="museums" src="assets/images/museum3.jpeg" alt="Blacks in Wax exterior">
+                <img onclick="changeMe(this)" class="museums" src="assets/images/museum3.jpeg" alt="Blacks in Wax exterior">
                 <figcaption id="blacksInWaxs">The National Great Blacks in Wax: 1601-03 East North Ave. Learn about historical Black figures.</figcaption>
             </figure>
 
             <!-- Reginald F. Lewis Museum -->
             <figure>
-                <img class="museums" src="assets/images/museum4.jpg" alt="Reginald F Lewis Museum exterior">
+                <img onclick="changeMe(this)" class="museums" src="assets/images/museum4.jpg" alt="Reginald F Lewis Museum exterior">
                 <figcaption id ="rfl" >Reginald F. Lewis Museum: 830 E Pratt St. Highlights African American history and culture.</figcaption>
             </figure>
         </section>
