@@ -89,12 +89,12 @@ function init(){
   document.getElementById('museums').innerHTML= captionArray[0];
 
   function changeMe(dom){
-    var start= dom.src.index0f('/musuems')+3;
-    var end= dom.src.index0f('.jpeg');
+    var start= dom.src.indexOf('musuems')+3;
+    var end= dom.src.indexOf('.jpeg');
     var num= dom.src.substring(start,end);
     console.log(num);
     
-    var capNum= [parseInt(num)-1];
+    var capNum= parseInt(num)-1;
     console.log(capNum);
     document.getElementById('museums').innerHTML= captionArray[capNum];
 
