@@ -1,39 +1,45 @@
 <?php
     include('./assets/inc/header.inc.php');
 ?>
-        <h2>How To Stay Busy</h2>
+<h2>How To Stay Busy</h2>
     <article>
         <p>In Baltimore, there’s a lot to keep you busy whether you are an introvert, extrovert, or ambivert. From daytime activities for kids to nightlife for adults, there's something for everyone.</p>
         
         <h3>For Viewing (Over 40+ museums)</h3>
        
             <p>Explore some of the city's best museums featuring Black artists and art history.</p>
-        <section onload="init();" id="museums"> 
+
+    <div onload="init();" id="museums"> 
+        <section id="table">
+            <img onclick="changeMe(this)" class="museums" src="assets/images/museum1.jpg" alt="Walters Art Museum exterior">
+            <img onclick="changeMe(this)" class="museums" src="assets/images/museum2.jpeg" alt="Baltimore Museum of Art exterior">
+            <img onclick="changeMe(this)" class="museums" src="assets/images/museum3.jpeg" alt="Blacks in Wax exterior">
+            <img onclick="changeMe(this)" class="museums" src="assets/images/museum4.jpg" alt="Reginald F Lewis Museum exterior">
+    </section>
             <!-- Walters Art Museum -->
             <figure>
-                <img onclick="changeMe(this)" class="museums" src="assets/images/museum1.jpg" alt="Walters Art Museum exterior">
                 <figcaption id="walters">Walters Art Museum: 600 N Charles St. Focused on diversity, inclusion, equity, and accessibility.</figcaption>
             </figure>
                
 
             <!-- Baltimore Museum of Art -->
             <figure>
-                <img onclick="changeMe(this)" class="museums" src="assets/images/museum2.jpeg" alt="Baltimore Museum of Art exterior">
+               
                 <figcaption id="bma">Baltimore Museum of Art: 10 Art Museum Drive. A free local art museum on Johns Hopkins University Campus.</figcaption>
             </figure>
              
             <!-- National Great Blacks in Wax Museum -->
             <figure>
-                <img onclick="changeMe(this)" class="museums" src="assets/images/museum3.jpeg" alt="Blacks in Wax exterior">
+                
                 <figcaption id="blacksInWaxs">The National Great Blacks in Wax: 1601-03 East North Ave. Learn about historical Black figures.</figcaption>
             </figure>
 
             <!-- Reginald F. Lewis Museum -->
             <figure>
-                <img onclick="changeMe(this)" class="museums" src="assets/images/museum4.jpg" alt="Reginald F Lewis Museum exterior">
+               
                 <figcaption id ="rfl" >Reginald F. Lewis Museum: 830 E Pratt St. Highlights African American history and culture.</figcaption>
             </figure>
-        </section>
+    </div>
 
         <h3>For Doing</h3>
         <section> 
