@@ -72,7 +72,7 @@
             <figure class="carousel">
                 <figure class="carousel-img">
                   <img class="aquarium-img" src="assets/images/aquarium1.jpg" alt="Aquarium fish tank" class="active">
-                  <img clas="aquarium-img" src="assets/images/aquarium2.jpg" alt="Birds in canopy">
+                  <img class="aquarium-img" src="assets/images/aquarium2.jpg" alt="Birds in canopy">
                   <img class="aquarium-img" src="assets/images/aquarium3.jpg" alt="Tortoises in habitat" >
                   <img class="aquarium-img" src="assets/images/aquarium4.jpg" alt="Shark Alley">
                 </figure>

@@ -51,6 +51,7 @@
 
  function changePhoto(index) {
    const slides = document.querySelectorAll(".carousel-img img");
+ 
    if(slides.length<0){
     return false;
    }
@@ -64,8 +65,10 @@
  
    slides.forEach((slide, i) => {
      slide.classList.remove("active");
+     slides.text.display="false";
      if (i === currentSlide) {
        slide.classList.add("active");
+       slides.text.display="true";
      }
    });
  }
