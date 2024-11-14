@@ -1,0 +1,1303 @@
+
+/* write css to make floating images for content pages with images but more text */
+/* fix nav manu */
+.title{
+    position:relative;
+    top:-20px;
+    margin: 10px;
+    padding:10px;
+}
+
+body {
+    background-color:FEF8F4;
+    margin:10px;
+    padding:10px;
+}
+
+footer{
+    padding-top:10px;
+    margin-top:10px;
+}
+
+h1,h2,h3{
+    font-family: "Oswald", sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style:normal;
+}
+
+figcaption,li,p{
+    font-family: 16px "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    font-family: 14px "Barlow", sans-serif;
+    font-weight: 300px;
+    text-decoration: none;
+    color: black;
+}
+
+
+
+h1,
+h3 {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-variant: small-caps;
+    font-weight: 400;
+    font-style:normal;
+}
+
+#music,#activities, #art, #dining, #home, #location, #school, #sports, #references {
+    display: flex;
+    flex-wrap: wrap;
+  
+    
+}
+
+
+.section {
+    background-color: #210B2C;
+    color: FEF8F4;
+    padding: 16px;
+    font-size: 16px;
+    border: 1px solid #210B2C;
+}
+
+.section:hover {
+    background-color: #5E6572;
+    color:#210B2C;
+}
+
+.blue {
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 500px;
+    background: #DBDBDB;
+    padding: 30px 30px 20px 30px;
+    font:14px "Barlow", sans-serif;
+    color: #666;
+    border-radius: 5px;
+}
+.blue h1 {
+    padding: 20px 0px 20px 40px;
+    display: block;
+    margin: -30px -30px 10px -30px;
+    color: #FFF;
+    background: #0e0069;
+    text-shadow: 1px 1px 1px #949494;
+    border-radius: 5px 5px 0px 0px;
+    border-bottom:1px solid #0e0069;
+
+}
+.blue h1>p {
+    display: block;
+    font-size: 11px;
+    color: #FFF;
+}
+
+.blue label {
+    display: block;
+    margin: 0px 0px 5px;
+    color:#01143c;
+    
+}
+
+.blue input[type="text"], 
+.blue input[type="email"],
+.blue input[type="date"],  
+.blue input[type="number"], 
+.blue input[type="range"], 
+.blue textarea, 
+.blue select {
+    color: #555;
+    height: 30px;
+    line-height:15px;
+    width: 100%;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font-weight: 500;
+}
+.blue input[type="radio"], 
+.blue input[type="checkbox"]{
+    color: #555;
+    padding: 0px 0px 0px 10px;
+    margin-top: 2px;
+    border: 1px solid #E5E5E5;
+    background: #FBFBFB;
+    outline: 0;
+    float:left;
+    box-shadow: inset 1px 1px 2px rgba(238, 238, 238, 0.2);
+    font-weight: 500;
+}
+
+legend{
+    color:black;
+}
+
+.blue textarea{
+    height:100px;
+    padding-top: 10px;
+}
+
+.blue .button {
+    background-color: #0e0069;  
+    border-radius: 5px;
+    border: none;
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    text-shadow: 1px 1px 1px #949494;
+    transition:all 1s linear;
+}
+.blue .button:hover {
+	cursor:pointer;
+    background-color:#0e0069;
+}
+.indent{
+    max-width: 500px;
+}
+.indent>span:first-child{
+    position: relative;
+
+    max-width:500px;
+    padding: 0px;
+    margin:0px;
+}
+.indent>span:last-child{
+    position: relative;
+    left:500px;
+    top:-50px;
+    padding-top:20px;
+    margin-top:20px;
+    max-width:500px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 35%;
+    margin: auto;
+    overflow: hidden;
+    gap:30px;
+    text-align: center;
+  }
+  
+  .carousel-img {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-img img {
+    width: 100%;
+    display: none;
+  }
+  
+  .carousel-img img.active {
+    display: block;
+  }
+  
+  button{
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  .previous {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 10px;
+  }
+  
+  .next {
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    right: 10px;
+  }
+  
+  .educational{
+    display:flex;
+    flex:nowrap;
+    direction:row;
+    gap:40px;
+    padding: 10px 12px;
+}
+
+.layeredNav {
+    overflow: hidden;
+    background-color: #FEF8F4;
+    font-family: "Barlow", sans-serif;
+}
+
+.layeredNav a {
+    float: left;
+    font-size: 1rem;
+    color: #210B2C;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
+
+.secondLayer {
+    float: left;
+    overflow:hidden; 
+   /* Required for dropdown positioning */
+}
+
+.button,.layeredButton{
+    background-color: #FEF8F4;
+    font-size: 1rem;
+    padding: 14px 16px;
+}
+
+.layeredButton .secondLayer  {
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #210B2C;
+    padding: 14px 16px;
+    background-color: #FEF8F4;
+    font-family: "Barlow", sans-serif;
+    cursor: pointer;
+    
+}
+
+.layeredNav a:hover,
+.secondLayer:hover .layeredButton {
+    background-color: #5E6572;
+    color: #fff; /* Optional: Change text color on hover */
+}
+
+.layerContent {
+    display: none; /* Hide dropdown by default */
+    position: absolute; /* Position relative to secondLayer */
+    left: 0;
+    background-color: #5E6572;
+    width: 100%; /* Full width of the parent */
+    z-index: 1; /* Keep it on top */
+}
+
+.layerContent a {
+    display:block;/* Make links block elements */
+    padding: 12px 16px; /* Padding for dropdown links */
+    color: #210B2C; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.layerContent a:hover {
+    background-color: #FEF8F4; /* Change background on hover */
+    color: #01143c; /* Change text color on hover */
+}
+
+.secondLayer:hover .layerContent {
+    display: block; /* Show dropdown on hover */
+}
+
+
+
+@media only screen and (max-width:600px) {
+    main{
+        position: relative;
+        bottom:-40px;
+    }
+
+
+    #hamburger{
+        background: none;
+        position: absolute;
+        top:0;
+        right:0;
+        line-height: 40px;
+        padding: 5px 15px 0px 15px;
+        border:0;
+        font-size:1rem;
+        font-weight: bold;
+        cursor:pointer;
+        outline:none;
+        z-index:1000000000;
+    }
+    /* .cross{
+        background: none;
+        position: absolute;
+        top:0;
+        right:0;
+        padding: 7px 15px 0px 15px;
+        border:0;
+        font-size:3rem;
+        font-weight: bold;
+        cursor:pointer;
+        outline:none;
+        z-index:1000000000;
+    } */
+
+    header{
+        width:100%;
+        height:60px;
+        line-height:60px;
+        border-bottom:1px solid FEF8F4;
+        background-color: FEF8F4;
+    }
+    #index{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 14px 18px;
+        gap:50px;
+    }
+
+
+    .canton,.harbor
+    {
+       padding: 8px 12px;
+       background-color: none;
+    }
+  
+
+    .menu>div{
+        width:35px;
+        height:5px;
+        background-color: black;
+        margin:6px 0;
+    }
+    p {
+        text-align: left;
+    }
+
+    .jay {
+        width: 320px;
+        height: 240px;
+    }
+
+    .djpope {
+        display: flex;
+
+        flex-wrap: wrap;
+        width: 320px;
+        height: 240px;
+    }
+
+    li {
+        font: 10px "Barlow", sans-serif;
+        font-weight: 300px;
+    }
+
+    figcaption,
+    p {
+        font: 12px "Barlow", sans-serif;
+        font-weight: 500px;
+    }
+
+    a {
+        font: 10px "Barlow", sans-serif;
+        font-weight: 300px;
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+    .ravens-img,
+    .orioles,
+    .graffiti,
+    .artsdistrict,
+    .fedhill-img,
+    .landOfKush,
+    .redEmma,
+    .dodahKitchen, .harmonyBakery, .general{
+        max-width: 25%;
+        max-height: 25%;
+    }
+
+    iframe{
+        width:400px;
+        height:250px;
+    }
+
+    .jay {
+        max-width: 75%;
+        max-height: 75%;
+    }
+
+    /* make hamburger menu ASAP  */
+
+    .home-grid {
+        display: grid;
+        grid-template-areas: "dropdown"
+            "dropdown";
+        grid-gap: 40px;
+        grid-template-columns: auto auto;
+    }
+
+    .section {
+        background-color: #210B2C;
+        color: white;
+        padding: 30px;
+        font-size: 12px;
+        border: 1px solid #210B2C;
+    }
+
+    #home,
+    #enjoyment,
+    #other,
+    #culture,
+    #learning {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .orioles,.ravens-img{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .ravens-img,
+    .orioles,
+    .graffiti,
+    .artsdistrict,
+    .fedhill-img {
+        width: 35%;
+        height: 35%;
+    }
+
+    #home-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    #other-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    #culture-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    #enjoyment-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    #learning-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 14px;
+    }
+
+    .graffiti {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    .djpope {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    .djpope-img,
+    .jay-mobile {
+        width: 35%;
+        height: 35%;
+        padding-left: 20px;
+    }
+
+    .jay-img {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+
+
+    #music>h3 {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #oldgen {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #newgen,
+    #newgen-caption {
+        position: relative;
+        bottom:-40px;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    #music {
+        row-gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    .fedhill{
+        width:340px;
+        height:280px;
+    }
+
+
+    .twoStudio,
+    .aquarium, .poly{
+        width: 320px;
+        height: 240px;
+    }
+
+    .fedhill-img,
+    .druidhill,
+    .cylburnArborteum,
+    .aquarium-img,
+    .scienceCenter, .canton, .harbor, .aquariumVertical-img,.museums, .BCC, .western,.BSA,.bard, .poly-img,.demographics{
+        width: 50%;
+        height: 50%;
+        padding-left: 20px;
+        padding-bottom:20px;
+    }
+    .ravens-img,
+    .orioles,
+    .artsdistrict,
+    .fedhill-img,
+    .djpope-img .BCC,
+    .western,
+    .FourSeasons,
+    .spb,
+    .ivyHotel,
+    .wharf, .museums {
+        max-width: 30%;
+        max-height: 30%;
+    }
+
+
+}
+
+@media only screen and (min-width:800px) { 
+
+    .jay-mobile{
+        display: none;
+    }
+main{
+    position: relative;
+    bottom:-40px;
+}
+
+.menu>div{
+    width:35px;
+    height:5px;
+    background-color: black;
+    margin:6px 0;
+}
+p {
+    text-align: left;
+}
+
+.jay {
+    width: 320px;
+    height: 240px;
+}
+
+.djpope {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap:40px;
+    width: 320px;
+    height: 240px;
+}
+
+li {
+    font: 10px "Barlow", sans-serif;
+    font-weight: 300px;
+}
+
+figcaption,
+p {
+    font: 12px "Barlow", sans-serif;
+    font-weight: 500px;
+}
+
+a {
+    font: 10px "Barlow", sans-serif;
+    font-weight: 300px;
+    text-decoration: none;
+    color: black;
+}
+
+.jay-img {
+    max-width: 35%;
+    max-height: 35%;
+}
+.djpope-img {
+    max-width: 36%;
+    max-height: 36%;
+}
+.ravens-img,
+.orioles,
+.graffiti,
+.artsdistrict,
+.fedhill-img,
+.landOfKush,
+.redEmma,
+.dodahKitchen, .harmonyBakery, .general,.museums{
+    max-width: 25%;
+    max-height: 25%;
+}
+.orioles,.ravens-img{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+}
+.jay {
+    max-width: 75%;
+    max-height: 75%;
+}
+
+/* make hamburger menu ASAP  */
+
+.home-grid {
+    display: grid;
+    grid-template-areas: "dropdown"
+        "dropdown";
+    grid-gap: 40px;
+    grid-template-columns: auto auto;
+}
+
+.section {
+    background-color: #210B2C;
+    color: white;
+    padding: 30px;
+    font-size: 12px;
+    border: 1px solid #210B2C;
+}
+
+#home,
+#enjoyment,
+#other,
+#culture,
+#learning {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.fedhill-img,
+.druidhill,
+.cylburnArborteum,
+.scienceCenter, .museums, .canton ,.harbor,.demographics,.graffiti{
+    width:30%;
+    height:30%;
+    padding-left:20px;
+}
+
+.ravens-img,
+.orioles,
+.graffiti,
+.artsdistrict,
+.fedhill-img {
+    width: 35%;
+    height: 35%;
+}
+
+#home-structure>aside {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 14px;
+}
+
+iframe{
+    width:400px;
+    height:250px;
+}
+
+.poly-img, .BCC, .western,.BSA,.bard{
+    max-width: 40%;
+    max-height: 40%;
+}
+.ravens-img,
+.orioles,
+.artsdistrict,
+.fedhill-img,
+.djpope-img .BCC,
+.western,
+.FourSeasons,
+.spb,
+.ivyHotel,
+.wharf, .museums {
+    max-width: 35%;
+    max-height: 35%;
+}
+.aquarium-img{
+    height: 30%;
+    width:30%;
+}
+.aquariumVertical-img{
+    height:31%;
+    width:31%;
+}
+#aquarium,#aquarium-img{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    gap:50px;  
+ }
+}
+
+@media only screen and (max-width:801px) {
+    h1,h2,h3{
+        font-family: "Oswald", sans-serif; 
+        font-size: 1.2rem;
+       
+    }
+    
+    figcaption,li,p{
+        font-family:  "Oswald", sans-serif;
+        font-size: 1.2rem;
+       
+    }
+    
+    a {
+        font-family: "Barlow", sans-serif;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: black;
+    }
+    
+    main{
+        position: relative;
+        bottom:-40px;
+    }
+
+    #home,
+    #enjoyment,
+    #other,
+    #culture,
+    #learning {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    iframe{
+        width:400px;
+        height:250px;
+    }
+    .ravens-img,
+    .orioles,
+    .artsdistrict,
+    .fedhill-img,
+    .djpope-img .BCC,
+    .western,
+    .FourSeasons,
+    .spb,
+    .ivyHotel,
+    .wharf, .museums {
+        max-width: 35%;
+        max-height: 35%;
+    }
+
+    .djpope-img {
+        max-width: 36%;
+        max-height: 36%;
+    }
+
+    .jay-img {
+        max-width: 35%;
+        max-height: 35%;
+    }
+
+    .djpope {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #home-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    #other-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    #culture-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    #enjoyment-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    #learning-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    .graffiti {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .home-grid {
+        display: grid;
+        grid-template-areas: "dropdown" "dropdown";
+        grid-gap: 50px;
+        grid-template-columns: auto auto;
+        padding-top: 20px;
+        justify-content: center;
+    }
+
+    #home,
+    #other,
+    #culture,
+    #learning,
+    #enjoyment {
+        padding: 20px;
+    }
+
+    #culutre>h3 {
+        position: relative;
+        text-align: center;
+    }
+
+    #enjoyment>h3 {
+        position: relative;
+        text-align: center;
+    }
+
+    #other>h3 {
+        position: relative;
+        text-align: center;
+    }
+
+    #home>h3 {
+        position: relative;
+        text-align: center;
+    }
+
+    .section {
+        background-color: #210B2C;
+        color: #DBDBDB;
+        padding: 25px;
+        height: 100px;
+        width: 150px;
+        font-size: 16px;
+        border: 1px solid #210B2C;
+        text-align: center;
+    }
+
+    .section:hover {
+        background-color: #5E6572;
+    }
+    #newgen{
+        display:flex;
+        flex-wrap:wrap;
+        gap:20px;
+    }
+
+    .learning-grid,
+    .other-grid {
+        display: grid;
+        grid-template-areas: "dropdown" "dropdown";
+        grid-gap: 50px;
+        grid-template-columns: auto auto;
+        padding-top: 20px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .culture-grid {
+        display: grid;
+        grid-template-areas: "dropdown" ;
+        grid-gap: 50px;
+        grid-template-columns: auto;
+        padding-top: 20px;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    #music {
+        row-gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    .landOfKush,
+    .redEmma,
+    .dodahKitchen, .harmonyBakery, .general{
+        max-width: 35%;
+        max-height: 35%;
+    }
+
+    .fedhill,
+    .twoStudio,
+    .aquarium, .poly{
+        width: 320px;
+        height: 240px;
+    }
+    #aquarium,#aquarium-img{
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction:row;
+       gap:50px;  
+    }
+
+    .fedhill{
+        padding-left:20px;
+    }
+
+    .aquarium-img{
+        width:30%;
+        height:30%;
+        padding-right:10px;
+    }
+    .aquariumVertical-img{
+        height:31%;
+        width:31%;
+    }
+
+    .orioles,.ravens-img{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding-top:20px;
+}
+    .fedhill-img,
+    .druidhill,
+    .cylburnArborteum,
+    .scienceCenter, .museums, .canton ,.harbor,.demographics,.graffiti{
+        width:30%;
+        height:30%;
+        padding-left:20px;
+    }
+
+    #graffiti{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .poly-img, .BCC, .western,.BSA,.bard{
+        max-width: 40%;
+        max-height: 40%;
+    }
+    
+    .poly-img{
+        width:45%;
+        height:45%;
+    }
+    .jay-mobile{
+        visibility: collapse;
+        height: 0px;
+        width:0px;
+    }
+    .djpope {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap:40px;
+        width: 320px;
+        height: 240px;
+    }
+    
+    .poly-img, .BCC, .western,.BSA,.bard{
+        max-width: 40%;
+        max-height: 40%;
+    }
+    
+
+}
+
+@media only screen and (min-width:1000px) {
+    h1,h2,h3{
+        font-family: "Oswald", sans-serif; 
+        font-size: 1.2rem;
+    }
+    
+    figcaption,li,p{
+        font-family:  "Oswald", sans-serif;
+        font-size: 1.2rem;
+    }
+    
+    a {
+        font-family: "Barlow", sans-serif;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: black;
+    }
+    main{
+        position: relative;
+        bottom:-40px;
+    }
+        
+
+    #home,
+    #enjoyment,
+    #other,
+    #culture,
+    #learning {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ravens-img,
+    .orioles,
+    .artsdistrict,
+    .fedhill-img,
+    .BCC,
+    .western,
+    .FourSeasons,
+    .spb,
+    .ivyHotel,
+    .wharf {
+        max-width: 35%;
+        max-height: 35%;
+    }
+
+    .djpope-img {
+        max-width: 61%;
+        max-height: 61%;
+    }
+
+    .jay-img {
+        max-width: 60%;
+        max-height: 60%
+    }
+
+    .djpope {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+       
+    }
+
+    .newgen{
+       display:flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+    }
+    #newgen{
+        position: relative;
+        bottom: 0px;
+        margin: 0px;
+        padding:10px;
+        gap:10px;
+        height:300px;
+    }
+    #home-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    #other-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    #culture-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    #enjoyment-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    #learning-structure>aside {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+
+    .graffiti {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .home-grid {
+        display: grid;
+        grid-template-areas: "dropdown" "dropdown";
+        grid-gap: 50px;
+        grid-template-columns: auto auto;
+        padding-top: 20px;
+        justify-content: center;
+    }
+
+    #home,
+    #other,
+    #culture,
+    #learning,
+    #enjoyment {
+        padding: 20px;
+    }
+
+    #culutre>h3 {
+        position: relative;
+        text-align: center;
+    }
+
+    #enjoyment>h3 {
+        position: relative;
+        text-align: center;
+    }
+
+    #other>h3 {
+        position: relative;
+        text-align: center;
+    }
+
+    #home>h3 {
+        position: relative;
+        text-align: center;
+    }
+
+    .section {
+        background-color: #210B2C;
+        color: #DBDBDB;
+        padding: 25px;
+        height: 100px;
+        width: 150px;
+        font-size: 16px;
+        border: 1px solid #210B2C;
+        text-align: center;
+    }
+
+    .section:hover {
+        background-color: #5E6572;
+    }
+ 
+
+    .learning-grid,
+    .other-grid {
+        display: grid;
+        grid-template-areas: "dropdown" "dropdown";
+        grid-gap: 50px;
+        grid-template-columns: auto auto;
+        padding-top: 20px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .culture-grid {
+        display: grid;
+        grid-template-areas: "dropdown" "dropdown" "dropdown";
+        grid-gap: 50px;
+        grid-template-columns: auto auto auto;
+        padding-top: 20px;
+        margin-top: 40px;
+        justify-content: center;
+    }
+    #music {
+        row-gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    .landOfKush,
+    .redEmma,
+    .dodahKitchen, .harmonyBakery, .general{
+        max-width: 35%;
+        max-height: 35%;
+    }
+
+    .fedhill,
+    .twoStudio,
+    .aquarium, .poly{
+        width: 320px;
+        height: 240px;
+    }
+    #aquarium,#aquarium-img{
+       display: flex;
+       flex-wrap: wrap;
+       flex-direction:row;
+       gap:50px;  
+    }
+
+    .fedhill{
+        padding-left:20px;
+    }
+
+    .aquarium-img{
+        width:30%;
+        height:30%;
+        padding-right:10px;
+    }
+    .aquariumVertical-img{
+        height:31%;
+        width:31%;
+    }
+
+    .fedhill-img,
+    .druidhill,
+    .cylburnArborteum,
+    .scienceCenter, .museums, .canton ,.harbor,.demographics,.graffiti{
+        width:30%;
+        height:30%;
+        padding-left:20px;
+    }
+
+    #graffiti{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .poly-img, .BCC, .western,.BSA,.bard{
+        max-width: 40%;
+        max-height: 40%;
+    }
+    
+    .poly-img{
+        width:45%;
+        height:45%;
+    }
+    .jay-mobile{
+        visibility: collapse;
+        height: 0px;
+        width:0px;
+    }
+
+    .educational{
+        display:flex;
+        flex:wrap;
+        direction:row;
+        gap:40px;
+        padding: 10px 12px;
+    }
+    #aquarium{
+        display:flex;
+        flex-wrap:nowrap;
+    }
+
+
+}
