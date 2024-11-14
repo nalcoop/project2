@@ -9,7 +9,7 @@
        
             <p>Explore some of the city's best museums featuring Black artists and art history.</p>
 
-    <div onload="init();" id="museums"> 
+    <div id="museums"> 
         <section id="table">
             <img onclick="changeMe(this)" class="museums" src="assets/images/museum1.jpg" alt="Walters Art Museum exterior">
             <img onclick="changeMe(this)" class="museums" src="assets/images/museum2.jpeg" alt="Baltimore Museum of Art exterior">
