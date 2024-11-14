@@ -17,27 +17,28 @@
             <img onclick="changeMe(this)" class="museums" src="assets/images/museum4.jpg" alt="Reginald F Lewis Museum exterior">
     </section>
             <!-- Walters Art Museum -->
-            <figure>
-                <figcaption id="walters">Walters Art Museum: 600 N Charles St. Focused on diversity, inclusion, equity, and accessibility.</figcaption>
+            <figure id="walters" class="caption" >
+            <figcaption> Walters Art Museum: 600 N Charles St. Focused on diversity, inclusion, equity, and accessibility.</figcaption>
             </figure>
                
 
             <!-- Baltimore Museum of Art -->
-            <figure>
                
-                <figcaption id="bma">Baltimore Museum of Art: 10 Art Museum Drive. A free local art museum on Johns Hopkins University Campus.</figcaption>
+                <figure id="bma" class="caption" >
+                <figcaption> Baltimore Museum of Art: 10 Art Museum Drive. A free local art museum on Johns Hopkins University Campus.</figcaption>
             </figure>
              
             <!-- National Great Blacks in Wax Museum -->
-            <figure>
+        
                 
-                <figcaption id="blacksInWaxs">The National Great Blacks in Wax: 1601-03 East North Ave. Learn about historical Black figures.</figcaption>
+                <figure id="blacksInWaxs" class="caption">
+                <figcaption> The National Great Blacks in Wax: 1601-03 East North Ave. Learn about historical Black figures.</figcaption>
             </figure>
 
             <!-- Reginald F. Lewis Museum -->
-            <figure>
                
-                <figcaption id ="rfl" >Reginald F. Lewis Museum: 830 E Pratt St. Highlights African American history and culture.</figcaption>
+            <figure id ="rfl" class="caption">
+                <figcaption> Reginald F. Lewis Museum: 830 E Pratt St. Highlights African American history and culture.</figcaption>
             </figure>
     </div>
 
