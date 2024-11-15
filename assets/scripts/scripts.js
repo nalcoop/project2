@@ -74,8 +74,14 @@ function changeSlide(step, carouselId) {
 }
 
 
-var newImage = new Array();
-var captionArray = [document.getElementById('walters'), document.getElementById('bma'), document.getElementById('blackInWaxs'), document.getElementById('rfl')];
+
+
+var captionArray = [
+  document.getElementById('walters'), 
+  document.getElementById('bma'), 
+  document.getElementById('blackInWaxs'), 
+  document.getElementById('rfl')];
+
 const museumMap = {
   'assets/img/museum1.jpg': "walters",
   'assets/img/museum2.jpeg': "bma",
@@ -91,7 +97,10 @@ function init() {
   });
 
   captionArray.forEach(caption => {
-    caption.style.display="none";
+    if(caption){
+      caption.style.display="none";
+    }
+   
   });
 }
 
@@ -99,7 +108,7 @@ function init() {
 
 function changeMe(dom) {
   const imageSource = dom.src;
-  const target = museumMap[imageSource];
+  const target = museumMap[imageSource].split('/').slice(-2).join('/');
   if(!target){return false};
 
   captionArray.forEach(caption => {
