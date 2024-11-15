@@ -193,12 +193,12 @@ legend{
     transition: transform 0.5s ease;
   }
   
-  .carousel-img img {
+  .carousel-img  {
     width: 100%;
     display: none;
   }
   
-  .carousel-img img.active {
+  .carousel-img.active {
     display: block;
   }
   

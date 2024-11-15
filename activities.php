@@ -75,13 +75,13 @@
                 </video>
             </figure>
         
-            <figure class="carousel">
-                <figure class="carousel-img">
+            <figure class="carousel" id="carousel-aquarium" >
+                <div class="carousel-img">
                   <img class="aquarium-img" src="assets/images/aquarium1.jpg" alt="Aquarium fish tank" class="active">
                   <img class="aquarium-img" src="assets/images/aquarium2.jpg" alt="Birds in canopy">
                   <img class="aquarium-img" src="assets/images/aquarium3.jpg" alt="Tortoises in habitat" >
                   <img class="aquarium-img" src="assets/images/aquarium4.jpg" alt="Shark Alley">
-                </figure>
+                </div>
             <figcaption>National Aquarium</figcaption>
 
             <button class="previous" onclick="changeSlide(-1)">&#10094;</button>
@@ -89,11 +89,11 @@
               </figure>
             
 
-            <figure class="carousel">
-                <figure class="carousel-img">
+            <figure class="carousel" id="carousel-science">
+                <div class="carousel-img">
                     <img class="scienceCenter" src="assets/images/msc1.jpg" alt="T-Rex skeleton at Maryland Science Center"> 
                     <img class="scienceCenter" src="assets/images/msc2.jpg" alt="Maryland Science Center exterior"> 
-                </figure>
+                </div>
                 <figcaption>Maryland Science Center</figcaption>
                 <button class="previous" onclick="changeSlide(-1)">&#10094;</button>
                 <button class="next" onclick="changeSlide(1)">&#10095;</button>
