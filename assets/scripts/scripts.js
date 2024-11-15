@@ -92,11 +92,13 @@ function init() {
       changeMe(this);
     })
   });
+
+  captionArray.forEach(caption => {
+    caption.style.display="none";
+  });
 }
 
-captionArray.forEach(caption => {
-  caption.style.display="none";
-});
+
 
 function changeMe(dom) {
   const imageSource = dom.src;
@@ -112,8 +114,7 @@ function changeMe(dom) {
   if(targetCaption){
     targetCaption.style.display="block";
   }
-
-  document.addEventListener("DOMContentLoaded",init);
- 
 }
+
+document.addEventListener("DOMContentLoaded",init);
 
