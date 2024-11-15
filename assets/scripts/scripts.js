@@ -44,16 +44,13 @@ window.addEventListener("resize", function () {
 });
 
 
-
-
-
 let currentSlides ={
     "carousel-aquarium":0,
     "carousel-science" :0
 };
 
 function changeSlide(step, carouselId) {
-  const carousel =document.getElementById(carouselId);
+  const carousel = document.getElementById(carouselId);
   const slides = carousel.querySelectorAll(".carousel-img");
   const totalSlides= slides.length;
   currentSlides[carouselId] += step;

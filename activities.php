@@ -84,8 +84,8 @@
                 </div>
             <figcaption>National Aquarium</figcaption>
 
-            <button class="previous" onclick="changeSlide(-1)">&#10094;</button>
-            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+            <button class="previous" onclick="changeSlide(-1,carousel-aquarium)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1,carousel-aquarium)">&#10095;</button>
               </figure>
             
 
@@ -95,8 +95,8 @@
                     <img class="scienceCenter" src="assets/images/msc2.jpg" alt="Maryland Science Center exterior"> 
                 </div>
                 <figcaption>Maryland Science Center</figcaption>
-                <button class="previous" onclick="changeSlide(-1)">&#10094;</button>
-                <button class="next" onclick="changeSlide(1)">&#10095;</button>
+                <button class="previous" onclick="changeSlide(-1,carousel-science)">&#10094;</button>
+                <button class="next" onclick="changeSlide(1,carousel-science)">&#10095;</button>
             </figure>
         </section>
 
