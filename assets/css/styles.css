@@ -1301,8 +1301,6 @@ iframe{
 
     #table{
         display:grid;
-        grid-template-areas: 1fr 1fr;
-        gap:40px;
     }
     .museums{
         max-height: 55%;
