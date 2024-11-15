@@ -1299,5 +1299,11 @@ iframe{
         flex-wrap:nowrap;
     }
 
+    .caption{
+        display:grid;
+        grid: row 1fr;
+        
+    }
+
 
 }

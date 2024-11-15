@@ -30,7 +30,6 @@
              
             <!-- National Great Blacks in Wax Museum -->
         
-                
                 <figure id="blacksInWaxs" class="caption">
                 <figcaption> The National Great Blacks in Wax: 1601-03 East North Ave. Learn about historical Black figures.</figcaption>
             </figure>
