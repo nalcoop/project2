@@ -566,7 +566,7 @@ legend{
     .druidhill,
     .cylburnArborteum,
     .aquarium-img,
-    .scienceCenter, .canton, .harbor, .aquariumVertical-img,.museums, .BCC, .western,.BSA,.bard, .poly-img,.demographics{
+    .scienceCenter, .canton, .harbor, .aquariumVertical-img, .BCC, .western,.BSA,.bard, .poly-img,.demographics{
         width: 50%;
         height: 50%;
         padding-left: 20px;
@@ -581,7 +581,7 @@ legend{
     .FourSeasons,
     .spb,
     .ivyHotel,
-    .wharf, .museums {
+    .wharf {
         max-width: 30%;
         max-height: 30%;
     }
@@ -656,7 +656,7 @@ a {
 .fedhill-img,
 .landOfKush,
 .redEmma,
-.dodahKitchen, .harmonyBakery, .general,.museums{
+.dodahKitchen, .harmonyBakery, .general{
     max-width: 25%;
     max-height: 25%;
 }
@@ -700,7 +700,7 @@ a {
 .fedhill-img,
 .druidhill,
 .cylburnArborteum,
-.scienceCenter, .museums, .canton ,.harbor,.demographics,.graffiti{
+.scienceCenter, .canton ,.harbor,.demographics,.graffiti{
     width:30%;
     height:30%;
     padding-left:20px;
@@ -739,7 +739,7 @@ iframe{
 .FourSeasons,
 .spb,
 .ivyHotel,
-.wharf, .museums {
+.wharf{
     max-width: 35%;
     max-height: 35%;
 }
@@ -807,7 +807,7 @@ iframe{
     .FourSeasons,
     .spb,
     .ivyHotel,
-    .wharf, .museums {
+    .wharf {
         max-width: 35%;
         max-height: 35%;
     }
@@ -990,7 +990,7 @@ iframe{
     .fedhill-img,
     .druidhill,
     .cylburnArborteum,
-    .scienceCenter, .museums, .canton ,.harbor,.demographics,.graffiti{
+    .scienceCenter, .canton ,.harbor,.demographics,.graffiti{
         width:30%;
         height:30%;
         padding-left:20px;
@@ -1260,7 +1260,7 @@ iframe{
     .fedhill-img,
     .druidhill,
     .cylburnArborteum,
-    .scienceCenter, .museums, .canton ,.harbor,.demographics,.graffiti{
+    .scienceCenter, .canton ,.harbor,.demographics,.graffiti{
         width:30%;
         height:30%;
         padding-left:20px;
@@ -1299,10 +1299,14 @@ iframe{
         flex-wrap:nowrap;
     }
 
-    .caption{
+    #table{
         display:grid;
-        grid: row 1fr;
-        
+        grid-template-areas: 1fr 1fr;
+        gap:40px;
+    }
+    .museums{
+        max-height: 55%;
+        max-width:55%;
     }
 
 
