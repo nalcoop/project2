@@ -51,14 +51,14 @@ let currentSlides ={
 
 function changeSlide(step, carouselId) {
   const carousel = document.getElementById(carouselId);
-  const slides = carousel.querySelectorAll(".carousel-img");
+  const slides = carousel.querySelectorAll(".carousel-img img");
   const totalSlides= slides.length;
   currentSlides[carouselId] += step;
 
   if(currentSlides[carouselId] >= totalSlides){
     currentSlides[carouselId]=0;
   } else if(currentSlides[carouselId] < 0){
-    currentSlides[carouselId] -1;
+    currentSlides[carouselId]=totalSlides -1;
   } 
 
   slides.forEach((slide,i)=>{

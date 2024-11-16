@@ -65,7 +65,8 @@
         <h3>Educational Fun</h3>
         <p>Activities for those interested in science and marine life. Fun for all ages!</p>
         <section class="educational">
-           
+
+        <figcaption>Videos of some animals featured at the National Aquarium</figcaption> 
             <figure id="aquarium">
                 <video class="aquarium" width="400" height="320" controls muted>
                     <source src="assets/images/dolphins.mp4" type="video/mp4">
@@ -76,14 +77,14 @@
                     Your browser does not support the video tag.
                 </video>
             </figure>
-            <figcaption>Videos of some animals featured at the National Aquarium</figcaption>
+           
         
             <figure class="carousel" id="carousel-aquarium" >
                 <div class="carousel-img">
-                  <img class="aquarium-img active" src="assets/images/aquarium1.jpg" alt="Aquarium fish tank" >
-                  <img class="aquarium-img" src="assets/images/aquarium2.jpg" alt="Birds in canopy">
-                  <img class="aquarium-img" src="assets/images/aquarium3.jpg" alt="Tortoises in habitat" >
-                  <img class="aquarium-img" src="assets/images/aquarium4.jpg" alt="Shark Alley">
+                  <img class="carousel-img active" src="assets/images/aquarium1.jpg" alt="Aquarium fish tank" >
+                  <img class="carousel-img" src="assets/images/aquarium2.jpg" alt="Birds in canopy">
+                  <img class="carousel-img" src="assets/images/aquarium3.jpg" alt="Tortoises in habitat" >
+                  <img class="carousel-img" src="assets/images/aquarium4.jpg" alt="Shark Alley">
                 </div>
             <figcaption>National Aquarium</figcaption>
 
@@ -94,8 +95,8 @@
 
             <figure class="carousel" id="carousel-science">
                 <div class="carousel-img">
-                    <img class="scienceCenter" src="assets/images/msc1.jpg" alt="T-Rex skeleton at Maryland Science Center"> 
-                    <img class="scienceCenter" src="assets/images/msc2.jpg" alt="Maryland Science Center exterior"> 
+                    <img class="carousel-img" src="assets/images/msc1.jpg" alt="T-Rex skeleton at Maryland Science Center"> 
+                    <img class="carousel-img" src="assets/images/msc2.jpg" alt="Maryland Science Center exterior"> 
                 </div>
                 <figcaption>Maryland Science Center</figcaption>
                 <button class="previous" onclick="changeSlide(-1,'carousel-science')">&#10094;</button>
