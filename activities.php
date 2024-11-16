@@ -68,11 +68,11 @@
 
         <figcaption>Videos of some animals featured at the National Aquarium</figcaption> 
             <figure id="aquarium">
-                <video class="aquarium" width="400" height="320" controls muted>
+                <video class="aquarium" width="360" height="280" controls muted>
                     <source src="assets/images/dolphins.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <video class="aquarium" width="400" height="320" controls muted>
+                <video class="aquarium" width="360" height="280" controls muted>
                     <source src="assets/images/jellyfish.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
