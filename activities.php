@@ -69,23 +69,26 @@
             <figure id="aquarium">
                 <video class="aquarium" width="400" height="320" controls muted>
                     <source src="assets/images/dolphins.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
                 <video class="aquarium" width="400" height="320" controls muted>
                     <source src="assets/images/jellyfish.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </figure>
+            <figcaption>Videos of some animals featured at the National Aquarium</figcaption>
         
             <figure class="carousel" id="carousel-aquarium" >
                 <div class="carousel-img">
-                  <img class="aquarium-img" src="assets/images/aquarium1.jpg" alt="Aquarium fish tank" class="active">
+                  <img class="aquarium-img active" src="assets/images/aquarium1.jpg" alt="Aquarium fish tank" >
                   <img class="aquarium-img" src="assets/images/aquarium2.jpg" alt="Birds in canopy">
                   <img class="aquarium-img" src="assets/images/aquarium3.jpg" alt="Tortoises in habitat" >
                   <img class="aquarium-img" src="assets/images/aquarium4.jpg" alt="Shark Alley">
                 </div>
             <figcaption>National Aquarium</figcaption>
 
-            <button class="previous" onclick="changeSlide(-1,carousel-aquarium)">&#10094;</button>
-            <button class="next" onclick="changeSlide(1,carousel-aquarium)">&#10095;</button>
+            <button class="previous" onclick="changeSlide(-1,'carousel-aquarium')">&#10094;</button>
+            <button class="next" onclick="changeSlide(1,'carousel-aquarium')">&#10095;</button>
               </figure>
             
 
@@ -95,8 +98,8 @@
                     <img class="scienceCenter" src="assets/images/msc2.jpg" alt="Maryland Science Center exterior"> 
                 </div>
                 <figcaption>Maryland Science Center</figcaption>
-                <button class="previous" onclick="changeSlide(-1,carousel-science)">&#10094;</button>
-                <button class="next" onclick="changeSlide(1,carousel-science)">&#10095;</button>
+                <button class="previous" onclick="changeSlide(-1,'carousel-science')">&#10094;</button>
+                <button class="next" onclick="changeSlide(1,'carousel-science')">&#10095;</button>
             </figure>
         </section>
 
