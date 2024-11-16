@@ -76,21 +76,21 @@ function changeSlide(step, carouselId) {
 var captionArray = [
   document.getElementById('walters'), 
   document.getElementById('bma'), 
-  document.getElementById('blackInWaxs'), 
+  document.getElementById('blacksInWaxs'), 
   document.getElementById('rfl')];
 
 const museumMap = {
-  'assets/img/museum1.jpg': "walters",
-  'assets/img/museum2.jpeg': "bma",
-  'assets/img/museum3.jpeg': "blacksInWaxs",
-  'assets/img/museum4.jpeg': "rfl"
+  'assets/images/museum1.jpg': "walters",
+  'assets/images/museum2.jpeg': "bma",
+  'assets/images/museum3.jpeg': "blacksInWaxs",
+  'assets/images/museum4.jpg': "rfl"
 };
 function init() {
-  const images = document.querySelectorAll('.museums')
+  const images = document.querySelectorAll('.museums');
   images.forEach(img => {
     img.addEventListener("click", function () {
       changeMe(this);
-    })
+    });
   });
 
   captionArray.forEach(caption => {
@@ -104,8 +104,8 @@ function init() {
 
 
 function changeMe(dom) {
-  const imageSource = dom.src;
-  const target = museumMap[imageSource].split('/').slice(-2).join('/');
+  const imageSource = dom.src.split('/').slice(-2).join('/');
+  const target = museumMap[imageSource];
   if(!target){return false};
 
   captionArray.forEach(caption => {

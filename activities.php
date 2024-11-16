@@ -90,9 +90,10 @@
 
             <button class="previous" onclick="changeSlide(-1,'carousel-aquarium')">&#10094;</button>
             <button class="next" onclick="changeSlide(1,'carousel-aquarium')">&#10095;</button>
-              </figure>
-            
+              </figure>           
+    </section>
 
+    <section class="educational2">
             <figure class="carousel" id="carousel-science">
                 <div class="carousel-img">
                     <img class="carousel-img" src="assets/images/msc1.jpg" alt="T-Rex skeleton at Maryland Science Center"> 
