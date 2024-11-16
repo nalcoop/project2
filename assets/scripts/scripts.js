@@ -1,10 +1,7 @@
 
 
-//fix code for hamburger menu
 
-//write code for carousel photos for content pages with heavy photos
-
-
+// hamburger code
 const hamburger = document.getElementById("hamburger");
 const layeredNav = document.querySelector(".layeredNav");
 const secondLayer = document.querySelectorAll(".secondLayer");
@@ -43,10 +40,12 @@ window.addEventListener("resize", function () {
   }
 });
 
+//carousel function code
 
 let currentSlides ={
     "carousel-aquarium":0,
-    "carousel-science" :0
+    "carousel-science" :0,
+    "carousel-museum" :0
 };
 
 function changeSlide(step, carouselId) {
@@ -68,56 +67,20 @@ function changeSlide(step, carouselId) {
   
   });
 
+  updateCaptions(carouselId,currentSlides[carouselId]);
 }
 
-
-
-
-var captionArray = [
-  document.getElementById('walters'), 
-  document.getElementById('bma'), 
-  document.getElementById('blacksInWaxs'), 
-  document.getElementById('rfl')];
-
-const museumMap = {
-  'assets/images/museum1.jpg': "walters",
-  'assets/images/museum2.jpeg': "bma",
-  'assets/images/museum3.jpeg': "blacksInWaxs",
-  'assets/images/museum4.jpg': "rfl"
-};
-function init() {
-  const images = document.querySelectorAll('.museums');
-  images.forEach(img => {
-    img.addEventListener("click", function () {
-      changeMe(this);
+function updateCaptions(carouselId,slideIndex){
+    const captionArray= document.querySelectorAll(`#${carouselId} .caption`);
+    captionArray.forEach((caption,index)=>{
+      caption.style.display= index === slideIndex ? "block" : "none";
     });
-  });
-
-  captionArray.forEach(caption => {
-    if(caption){
-      caption.style.display="none";
-    }
-   
-  });
 }
 
 
 
-function changeMe(dom) {
-  const imageSource = dom.src.split('/').slice(-2).join('/');
-  const target = museumMap[imageSource];
-  if(!target){return false};
 
-  captionArray.forEach(caption => {
-    caption.style.display="none";
-  });
 
-  
-  const targetCaption = document.getElementById(target);
-  if(targetCaption){
-    targetCaption.style.display="block";
-  }
-}
 
-document.addEventListener("DOMContentLoaded",init);
+
 

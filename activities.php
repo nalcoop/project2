@@ -3,48 +3,42 @@
 ?>
 <h2>How To Stay Busy</h2>
     <article>
-        <p>In Baltimore, there’s a lot to keep you busy whether you are an introvert, extrovert, or ambivert. From daytime activities for kids to nightlife for adults, there's something for everyone.</p>
+        <p>In Baltimore, there’s a lot to keep you busy whether you are an introvert, extrovert, or ambivert. From daytime activities for kids to educational exhibits to learn some history or science, or even just to enjoy a night out on the town for the adult crowd; there's something for everyone to do. Even if you don't find your niche here, don't worry there's more to explore on throughout the site that'll your desires.</p>
         
         <h3>For Viewing (Over 40+ museums)</h3>
-       
-            <p>Explore some of the city's best museums featuring Black artists and art history.</p>
+            <p>Baltimore, is home to over 40+ musuems. Ranging from art museums, to science, to sports and more. Featured here are some of the city's best, and most cost effective museums featuring Black artists and art history that represent the culture of the city.</p>
 
-    <div id="museums"> 
-        <section id="table">
-            <img onclick="changeMe(this)" class="museums" src="assets/images/museum1.jpg" alt="Walters Art Museum exterior">
-            <img onclick="changeMe(this)" class="museums" src="assets/images/museum2.jpeg" alt="Baltimore Museum of Art exterior">
-            <img onclick="changeMe(this)" class="museums" src="assets/images/museum3.jpeg" alt="Blacks in Wax exterior">
-            <img onclick="changeMe(this)" class="museums" src="assets/images/museum4.jpg" alt="Reginald F Lewis Museum exterior">
-    </section>
-            <!-- Walters Art Museum -->
-            <figure id="walters" class="caption" >
-            <figcaption> Walters Art Museum: 600 N Charles St. Focused on diversity, inclusion, equity, and accessibility.</figcaption>
-            </figure>
-               
-
-            <!-- Baltimore Museum of Art -->
-               
-                <figure id="bma" class="caption" >
-                <figcaption> Baltimore Museum of Art: 10 Art Museum Drive. A free local art museum on Johns Hopkins University Campus.</figcaption>
-            </figure>
-             
-            <!-- National Great Blacks in Wax Museum -->
+   
+    <figure class="carousel" id="carousel-museum">
         
+        <img class="museums" src="assets/images/museum1.jpg" alt="Walters Art Museum exterior">
+            <div class="carousel-img">
+                <figure id="walters" class="caption" >
+                    <figcaption> Walters Art Museum: 600 N Charles St. Focused on diversity, inclusion, equity, and accessibility.</figcaption>
+                </figure>
+            <img class="museums" src="assets/images/museum2.jpeg" alt="Baltimore Museum of Art exterior">
+                <figure id="bma" class="caption" >
+                    <figcaption> Baltimore Museum of Art: 10 Art Museum Drive. A free local art museum on Johns Hopkins University Campus.</figcaption>
+                </figure>
+            <img  class="museums" src="assets/images/museum3.jpeg" alt="Blacks in Wax exterior">
                 <figure id="blacksInWaxs" class="caption">
-                <figcaption> The National Great Blacks in Wax: 1601-03 East North Ave. Learn about historical Black figures.</figcaption>
-            </figure>
+                    <figcaption> The National Great Blacks in Wax: 1601-03 East North Ave. Learn about historical Black figures.</figcaption>
+                </figure>
+            <img  class="museums" src="assets/images/museum4.jpg" alt="Reginald F Lewis Museum exterior">
+                <figure id ="rfl" class="caption">
+                    <figcaption> Reginald F. Lewis Museum: 830 E Pratt St. Highlights African American history and culture.</figcaption>
+                </figure>
+            </div>
+            <button class="previous" onclick="changeSlide(-1,'carousel-museum')">&#10094;</button>
+            <button class="next" onclick="changeSlide(1,'carousel-museum')">&#10095;</button>
 
-            <!-- Reginald F. Lewis Museum -->
-               
-            <figure id ="rfl" class="caption">
-                <figcaption> Reginald F. Lewis Museum: 830 E Pratt St. Highlights African American history and culture.</figcaption>
-            </figure>
-    </div>
+    </figure>
 
         <h3>For Doing</h3>
+        <!-- Possibly google map pins -->
         <section> 
             <figure>
-                <figcaption>Amazing Glaze, located at 1340 Smith Ave. A creative space for pottery and canvas painting for all ages.</figcaption>
+                <figcaption>Amazing Glaze, located at 1340 Smith Ave. A creative space for pottery and canvas painting for all ages.<figcaption>
             </figure>
            
             <figure>
