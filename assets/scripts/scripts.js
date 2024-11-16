@@ -71,11 +71,18 @@ function changeSlide(step, carouselId) {
 }
 
 function updateCaptions(carouselId,slideIndex){
-    const captionArray= document.querySelectorAll(`#${carouselId} .caption`);
+  const captionArray = [
+    document.getElementById('walters'), 
+    document.getElementById('bma'), 
+    document.getElementById('blacksInWaxs'), 
+    document.getElementById('rfl')];
+    
     captionArray.forEach((caption,index)=>{
       caption.style.display= index === slideIndex ? "block" : "none";
     });
 }
+
+
 
 
 
