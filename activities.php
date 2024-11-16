@@ -23,7 +23,7 @@
                 <figure id="blacksInWaxs" class="caption">
                     <figcaption> The National Great Blacks in Wax: 1601-03 East North Ave. Learn about historical Black figures.</figcaption>
                 </figure>
-            <img  class="museums" src="assets/images/museum4.jpg" alt="Reginald F Lewis Museum exterior">
+            <img class="museums" src="assets/images/museum4.jpg" alt="Reginald F Lewis Museum exterior">
                 <figure id ="rfl" class="caption">
                     <figcaption> Reginald F. Lewis Museum: 830 E Pratt St. Highlights African American history and culture.</figcaption>
                 </figure>

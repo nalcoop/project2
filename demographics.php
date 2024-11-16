@@ -1,7 +1,9 @@
 <?php
     include('./assets/inc/header.inc.php');
 ?>
-
+<!-- Extras: Update my google map to have about 5-7 revelant pins from my site -->
+ <!-- Make sure that google map is showing up cause wtf -->
+  <!-- Update the graphs make them interactive on page load, if possible, hover effect maybe i could use the techniques he showed us for the lightbox and just have the numbers pop up -->
     <!-- Page Header -->
     <header>
         <h2>Demographics</h2>
