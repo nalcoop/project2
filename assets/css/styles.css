@@ -757,6 +757,11 @@ iframe{
     flex-direction:row;
     gap:50px;  
  }
+
+ #carousel-museum{
+    max-height: 45%;
+    max-width:45%;
+}
 }
 
 @media only screen and (max-width:801px) {
@@ -1030,7 +1035,10 @@ iframe{
         max-height: 40%;
     }
     
-
+    #carousel-museum{
+        max-height: 45%;
+        max-width:45%;
+    }
 }
 
 @media only screen and (min-width:1000px) {
@@ -1302,7 +1310,7 @@ iframe{
     #table{
         display:grid;
     }
-    .museums{
+    #carousel-museum{
         max-height: 55%;
         max-width:55%;
     }
