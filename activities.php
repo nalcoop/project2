@@ -69,10 +69,11 @@
                     <source src="assets/images/jellyfish.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-            </figure>
-           
-        
-            <figure class="carousel" id="carousel-aquarium" >
+            </figure>        
+    </section>
+
+    <section class="educational2">
+    <figure class="carousel" id="carousel-aquarium" >
                 <div class="carousel-img">
                   <img class="carousel-img active" src="assets/images/aquarium1.jpg" alt="Aquarium fish tank" >
                   <img class="carousel-img" src="assets/images/aquarium2.jpg" alt="Birds in canopy">
@@ -83,11 +84,9 @@
 
             <button class="previous" onclick="changeSlide(-1,'carousel-aquarium')">&#10094;</button>
             <button class="next" onclick="changeSlide(1,'carousel-aquarium')">&#10095;</button>
-              </figure>           
-    </section>
+    </figure>  
 
-    <section class="educational2">
-            <figure class="carousel" id="carousel-science">
+    <figure class="carousel" id="carousel-science">
                 <div class="carousel-img">
                     <img class="carousel-img active" src="assets/images/msc1.jpg" alt="T-Rex skeleton at Maryland Science Center"> 
                     <img class="carousel-img" src="assets/images/msc2.jpg" alt="Maryland Science Center exterior"> 

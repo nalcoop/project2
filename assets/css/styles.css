@@ -4,7 +4,7 @@
 /* Fix media quieres to fit for desktop, ask can dad work from office so i can hold pc or go on campus ew */
 /* Make animations for banner header explore410 */
 /* floating text and wrap for pages without comments */
-/* apply general styles to all pages */
+/* apply general styles to all pages */ 
 .title{
     position:relative;
     top:-20px;
@@ -44,8 +44,6 @@ a {
     color: black;
 }
 
-
-
 h1,
 h3 {
     font-family: "Oswald", sans-serif;
@@ -57,9 +55,7 @@ h3 {
 
 #music,#activities, #art, #dining, #home, #location, #school, #sports, #references {
     display: flex;
-    flex-wrap: wrap;
-  
-    
+    flex-wrap: wrap;   
 }
 
 
@@ -589,7 +585,20 @@ legend{
         max-width: 30%;
         max-height: 30%;
     }
-
+    .educational{
+        display:flex;
+        flex:wrap;
+        direction:row;
+        gap:40px;
+        padding: 10px 12px;
+    }
+    .educational2{
+        display:flex;
+        flex:wrap;
+        direction:row;
+        gap:40px;
+        padding: 10px 12px;
+    }
 
 }
 
@@ -765,6 +774,20 @@ iframe{
  #carousel-museum{
     max-height: 45%;
     max-width:45%;
+}
+.educational{
+    display:flex;
+    flex:wrap;
+    direction:row;
+    gap:40px;
+    padding: 10px 12px;
+}
+.educational2{
+    display:flex;
+    flex:wrap;
+    direction:row;
+    gap:40px;
+    padding: 10px 12px;
 }
 }
 
@@ -974,6 +997,20 @@ iframe{
        flex-wrap: wrap;
        flex-direction:row;
        gap:50px;  
+    }
+    .educational{
+        display:flex;
+        flex:wrap;
+        direction:row;
+        gap:40px;
+        padding: 10px 12px;
+    }
+    .educational2{
+        display:flex;
+        flex:wrap;
+        direction:row;
+        gap:40px;
+        padding: 10px 12px;
     }
 
     .fedhill{
@@ -1300,6 +1337,13 @@ iframe{
     }
 
     .educational{
+        display:flex;
+        flex:wrap;
+        direction:row;
+        gap:40px;
+        padding: 10px 12px;
+    }
+    .educational2{
         display:flex;
         flex:wrap;
         direction:row;
