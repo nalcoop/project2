@@ -71,13 +71,8 @@ function changeSlide(step, carouselId) {
 }
 
 function updateCaptions(carouselId,slideIndex){
-  const captionArray = [
-    document.getElementById('walters'), 
-    document.getElementById('bma'), 
-    document.getElementById('blacksInWaxs'), 
-    document.getElementById('rfl')];
-    
-    captionArray.forEach((caption,index)=>{
+  captionArray.forEach((caption,index)=>{
+    if(currentSlides[carouselId] === currentSlides["carousel-museum"])
       caption.style.display= index === slideIndex ? "block" : "none";
     });
 }
