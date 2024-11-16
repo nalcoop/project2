@@ -10,9 +10,8 @@
 
    
     <figure class="carousel" id="carousel-museum">
-        
-        <img class="museums" src="assets/images/museum1.jpg" alt="Walters Art Museum exterior">
-            <div class="carousel-img">
+    <div class="carousel-img">   
+        <img class="museums active" src="assets/images/museum1.jpg" alt="Walters Art Museum exterior">
                 <figure id="walters" class="caption" >
                     <figcaption> Walters Art Museum: 600 N Charles St. Focused on diversity, inclusion, equity, and accessibility.</figcaption>
                 </figure>
@@ -90,7 +89,7 @@
     <section class="educational2">
             <figure class="carousel" id="carousel-science">
                 <div class="carousel-img">
-                    <img class="carousel-img" src="assets/images/msc1.jpg" alt="T-Rex skeleton at Maryland Science Center"> 
+                    <img class="carousel-img active" src="assets/images/msc1.jpg" alt="T-Rex skeleton at Maryland Science Center"> 
                     <img class="carousel-img" src="assets/images/msc2.jpg" alt="Maryland Science Center exterior"> 
                 </div>
                 <figcaption>Maryland Science Center</figcaption>
