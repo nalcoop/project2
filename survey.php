@@ -8,7 +8,7 @@
     <!-- update the form to match the site css (once css is finalized) -->
 
    <main id="survey">
-    <form action="https://people.rit.edu/~nic4340/240/ex04" method="GET" class="blue">
+    <form action="submitSurvey.php" method="POST" class="blue">
         <h1>Travel Form</h1>
             <hr>Please tell us about your visit:
                 <p>Please fill in all required fields.</p>
@@ -18,6 +18,8 @@
     
             <label for="email">Your Email:</label>
             <input type="email" id="email" name="email">
+
+            <input type="hidden" name="pageId" value="<?php echo $pageId; ?>">
     
             <label for="visitation">When did you visit?</label>
             <input type="date" id="visitation" name="visitation" required>
@@ -50,6 +52,9 @@
     <div class="indent">
         <label for="experience">Rate your experience?</label>    
        <span>0</span><input type="range" id="experience" name="experience" min="0" max="5" step="1"><span>5</span>
+
+       <label for="message">Leave feedback about your experience?</label>
+       <input type="textarea" id="message"
     </div>
        
             <input type="submit" class="button" value="send">
