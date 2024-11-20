@@ -1,5 +1,8 @@
 <?php
     include('./assets/inc/header.inc.php');
+    require_once('/home/MAIN/nic4340/connection.db.php');
+    require_once('assets/inc/tools.inc.php');
+    require_once('assets/inc/validations.inc.php');
 ?>
 <!-- Switch it over to the database -->
  <!-- sanitize every since piece of open access where someone can write in information -->
@@ -66,7 +69,7 @@ $sql= "SELECT `Name`, `Comment` FROM Survey WHERE `PageId` =" .$pageId;
 
 if($result=$mysqli ->query($sql)){
     while($row = $result -> fetch_assoc()){
-        include("assets/inc/survey.inc.php");
+        include("assets/inc/surveyb .inc.php");
     }
     $result->free_result();
 }
