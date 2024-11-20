@@ -52,9 +52,8 @@
     <div class="indent">
         <label for="experience">Rate your experience?</label>    
        <span>0</span><input type="range" id="experience" name="experience" min="0" max="5" step="1"><span>5</span>
-
        <label for="message">Leave feedback about your experience?</label>
-       <input type="textarea" id="message" name="message">
+       <input type="textarea" id="message" name="message"> 
     </div>
        
             <input type="submit" class="button" value="send">
@@ -62,5 +61,15 @@
    </main>
     
 <?php
-    include('./assets/inc/footer.inc.php');
+
+$sql= "SELECT `Name`, `Comment` FROM Survey WHERE `PageId` =" .$pageId;
+
+if($result=$mysqli ->query($sql)){
+    while($row = $result -> fetch_assoc()){
+        include("assets/inc/comment.inc.php");
+    }
+    $result->free_result();
+}
+include('./assets/inc/footer.inc.php');
 ?>
+   
