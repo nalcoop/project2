@@ -54,7 +54,7 @@
        <span>0</span><input type="range" id="experience" name="experience" min="0" max="5" step="1"><span>5</span>
 
        <label for="message">Leave feedback about your experience?</label>
-       <input type="textarea" id="message"
+       <input type="textarea" id="message" name="message">
     </div>
        
             <input type="submit" class="button" value="send">
