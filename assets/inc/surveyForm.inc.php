@@ -11,8 +11,6 @@
     
             <label for="email">Your Email:</label>
             <input type="email" id="email" name="email">
-
-            <input type="hidden" name="pageId" value="<?php echo $pageId; ?>">
     
             <label for="visitation">When did you visit?</label>
             <input type="date" id="visitation" name="visitation" required>
@@ -54,7 +52,7 @@
 <hr>
 <?php
 
-$sql= "SELECT `Name`, `Comment` FROM Survey WHERE `PageId` =" .$pageId;
+$sql= "SELECT `Name`, `Comment` FROM Survey";
 
 if($result=$mysqli ->query($sql)){
     while($row = $result -> fetch_assoc()){
