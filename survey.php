@@ -66,7 +66,7 @@ $sql= "SELECT `Name`, `Comment` FROM Survey WHERE `PageId` =" .$pageId;
 
 if($result=$mysqli ->query($sql)){
     while($row = $result -> fetch_assoc()){
-        include("assets/inc/comment.inc.php");
+        include("assets/inc/survey.inc.php");
     }
     $result->free_result();
 }
