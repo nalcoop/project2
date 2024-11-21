@@ -35,10 +35,7 @@
         <article>
             <h3>Geographic Location</h3>
             <figure>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197646.82836689058!2d-76.78530894060826!3d39.282995798785635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c803aed6f483b7%3A0x44896a84223e758!2sBaltimore%2C%20MD!5e0!3m2!1sen!2sus!4v1728666385557!5m2!1sen!2sus"
-                    width="600" height="450" style="border:0;" allowfullscreen loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1mfdSrTvd70q1aW4aw1jc5_CozGELvD0&hl=en&ehbc=2E312F" width="640" height="480"></iframe>
                 <figcaption>
                     <strong>Location Details:</strong>
                     <ul>

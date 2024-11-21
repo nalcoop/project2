@@ -77,9 +77,17 @@ function updateCaptions(carouselId,slideIndex){
     });
 }
 
+//google maps w json pins attempts
 
 
-
+function initMap(){
+  const map= new google.maps.Map(document.getElementById("map"), {
+    zoom:6,
+    center: {lat:39.29144, lng: -76.61493},
+  });
+  
+  map.data.loadGeoJson('google.json');
+}
 
 
 
