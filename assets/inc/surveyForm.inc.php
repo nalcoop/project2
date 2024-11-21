@@ -54,11 +54,11 @@
 
 $sql= "SELECT `Name`, `Comment` FROM Survey";
 
-if($result=$mysqli ->query($sql)){
-    while($row = $result -> fetch_assoc()){
-        include("assets/inc/survey.inc.php");
-    }
-    $result->free_result();
+    if($result=$mysqli ->query($sql)){
+        while($row = $result -> fetch_assoc()){
+            include("assets/inc/survey.inc.php");
+        }
+        $result->free_result();
 }
 include('./assets/inc/footer.inc.php');
 ?>

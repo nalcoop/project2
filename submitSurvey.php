@@ -11,7 +11,7 @@
     //number of question marks needs to match the number of parameters entered i.e 3question marks to match the 3parameters to match 
     $stmt= $mysqli->prepare("INSERT INTO Survey(`Name`, `Comment`, `Email`) VALUES (?,?,?");
     // i,d,s,b; where i= integer, d=double, s=string, b=blob -> used for files 
-    $stmt->bind_para("ssis",$name,$comment,$email);
+    $stmt->bind_para("sss",$name,$comment,$email);
 
     $name= sanitize($_POST['userName'],255);
     $comment=sanitize($_POST['message'],1000);

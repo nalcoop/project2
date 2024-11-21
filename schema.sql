@@ -6,4 +6,4 @@ CREATE TABLE `Survey` (
   `Datetime` timestamp NOT NULL ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE='InnoDB' COLLATE 'utf8_general_ci';
 
-ALTER TABLE `Comment`
+ALTER TABLE `Survey`
