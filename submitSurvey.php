@@ -22,7 +22,7 @@
     $stmt->bind_para("sss",$name,$comment,$email);
 
     $name= sanitize($_POST['userName'],255);
-    $comment=sanitize($_POST['message'],1000);
+    $message=sanitize($_POST['message'],1000);
     $email=sanitize($_POST['email'],240);
     
     if(!emailCheck($email)){
