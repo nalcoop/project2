@@ -8,10 +8,10 @@
             <aside><strong>Select a section below to explore.</strong></aside>
             <div class="other-grid">
                 <button class="section" type="button" onclick="window.location.href='grading.php'"
-                    value="Demographics">Grading</button>
+                    value="Grading">Grading</button>
 
-                <button class="section" type="button" onclick="window.location.href='location.php'"
-                    value="Location">References</button>
+                <button class="section" type="button" onclick="window.location.href='refernces.php'"
+                    value="References">References</button>
             </div>
         </div>
     </main>
