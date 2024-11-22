@@ -43,7 +43,7 @@
 <hr>
 <?php
 
-$sql= "SELECT `Name`, `Comment` FROM Survey";
+$sql= "SELECT `Name`, `Message` FROM Survey";
 
     if($result=$mysqli ->query($sql)){
         while($row = $result -> fetch_assoc()){
