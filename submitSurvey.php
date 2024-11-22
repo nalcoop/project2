@@ -17,18 +17,42 @@
     //VALUES (???); which correlate to the fields
     //bind param(use the short hand of the of the data(field) types)
     //example bind_param('iss',$id,$name,$comment);
-    $stmt= $mysqli->prepare("INSERT INTO Survey(`Name`, `Message`, `Email`,`Visitation`,`GroupNumber`,`Activities`,`Dining`,`RestArea`,`Schools`,`Art`,`Music`,`Sports`,`Demographics`,`Culture`,`Enjoyment`,`Learning`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    $stmt= $mysqli->prepare("INSERT INTO Survey(`Name`, `Message`, `Email`,`Visitation`,`Activities`,`Dining`,`RestArea`,`Schools`,`Art`,`Music`,`Sports`,`Demographics`,`Culture`,`Enjoyment`,`Learning`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
     // i,d,s,b; where i= integer, d=double, s=string, b=blob -> used for files 
-    $stmt->bind_para("sss",$name,$comment,$email);
+    $stmt->bind_para("sssssssssssssss",$name,$comment,$email,$visitation,$activities,$dining,$restArea,$schools,$art,$music,$sports,$demographics,$culture,$enjoyment,$learning);
 
     $name= sanitize($_POST['userName'],255);
     $message=sanitize($_POST['message'],1000);
     $email=sanitize($_POST['email'],240);
+    $visitation=sanitize($_POST['visitation']);
+    //checkboxes after seeing if it checked or not , use string value
+    $activities=sanitize($_POST['activities']);
+    $dining=sanitize($_POST['dining']);
+    $restArea=sanitize($_POST['restArea']);
+    $schools=sanitize($_POST['schools']);
+    $art=sanitize($_POST['art']);
+    $music=sanitize($_POST['music']);
+    $sports=sanitize($_POST['sports']);
+    $demographics=sanitize($_POST['demographics']);
+    //radios after seeing if they are selected use string value
+    $culture=sanitize($_POST['culture']);
+    $enjoyment=sanitize($_POST['enjoyment']);
+    $learning=sanitize($_POST['learning']);
+
     
     if(!emailCheck($email)){
         echo 'You have provided an invalid email address.';
         exit();
     }
+
+    $activities=null;
+    if(!array_key_exists($_POST['activities'])){
+       $activities=false;
+    }else{
+        $activities=true;
+    }
+
+    
     $stmt->execute();
 
 

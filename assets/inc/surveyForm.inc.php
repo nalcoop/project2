@@ -15,8 +15,6 @@
             <label for="visitation">When did you visit?</label>
             <input type="date" id="visitation" name="visitation" required>
 
-            <label for="groupNumber">How many in your group?</label>
-            <input type="number" id="groupNumber" name="groupNumber" min="1" required>
             
                 <p>Select visited pages</p>    
                 <!-- fix the name of these cause these are checkboxes -->
