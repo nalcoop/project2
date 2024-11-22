@@ -11,7 +11,7 @@
 
   
 
-    $sql= "SELECT `Id`, `Name` FROM `Survey` WHERE Id = ". $pageId;
+    $sql= "SELECT `Name` `Message` FROM `Survey`";
     
     //$result is being set to the output of $mysqli -> query($sql)
     if($result = $mysqli -> query($sql)){

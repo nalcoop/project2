@@ -7,7 +7,7 @@
 
 
 <h2><?php echo $row['Name'];?></h2>
-<form><?php echo $row['Comment'];?></form>
+<form><?php echo $row['Message'];?></form>
 
 
    
