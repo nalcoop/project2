@@ -13,7 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="assets/scripts/scripts.js" defer></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=TRAVEL_SITE" async defer></script>
     <link rel="stylesheet" href="assets/css/styles.css">
     
     <title><?php echo "Travel Site | " . htmlspecialchars($title ?? ''); ?></title>
