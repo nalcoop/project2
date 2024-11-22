@@ -52,6 +52,56 @@
         $activities=true;
     }
 
+    $dining=null;
+    if(!array_key_exists($_POST['dining'])){
+       $dining=false;
+    }else{
+        $dining=true;
+    }
+
+    $restArea=null;
+    if(!array_key_exists($_POST['restArea'])){
+       $restArea=false;
+    }else{
+        $restArea=true;
+    }
+
+    $schools=null;
+    if(!array_key_exists($_POST['schools'])){
+       $schools=false;
+    }else{
+        $schools=true;
+    }
+
+    $art=null;
+    if(!array_key_exists($_POST['art'])){
+       $art=false;
+    }else{
+        $art=true;
+    }
+
+    $music=null;
+    if(!array_key_exists($_POST['music'])){
+       $music=false;
+    }else{
+        $music=true;
+    }
+
+    $sports=null;
+    if(!array_key_exists($_POST['sports'])){
+       $sports=false;
+    }else{
+        $sports=true;
+    }
+
+    $demographics=null;
+    if(!array_key_exists($_POST['demographics'])){
+       $demographics=false;
+    }else{
+        $demographics=true;
+    }
+
+    //unsure on how to check the radio button
     
     $stmt->execute();
 
