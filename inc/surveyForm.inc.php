@@ -17,7 +17,7 @@
 
             
                 <p>Select visited pages</p>    
-                <!-- fix the name of these cause these are checkboxes -->
+                <!-- add to adminer -->
                 <input type="checkbox" id="activities" name="activities"> <label>Activities</label> 
                 <input type="checkbox" id="dining" name="dining"><label>Best Dining</label> 
                 <input type="checkbox" id="restArea" name="restArea"><label>Quality Comfort</label>  
@@ -29,6 +29,7 @@
      
     <fieldset>
         <legend>Select your favorite content section</legend>
+        <!-- add to adminer -->
         <input type="radio" id="culture" name="favPage" value="culture"><label for="culture">Culture</label> 
         <input type="radio" id="enjoyment" name="favPage" value="enjoyment"><label for="enjoyment">Enjoyment</label>
         <input type="radio" id= "learning" name="favPage" value="learning"><label for="learning">Learning</label>

@@ -17,6 +17,9 @@
     //VALUES (???); which correlate to the fields
     //bind param(use the short hand of the of the data(field) types)
     //example bind_param('iss',$id,$name,$comment);
+
+
+    //update table in adminer to ensure that this will actally display proper values 
     $stmt= $mysqli->prepare("INSERT INTO Survey(`Name`, `Message`, `Email`,`Visitation`,`Activities`,`Dining`,`RestArea`,`Schools`,`Art`,`Music`,`Sports`,`Demographics`,`Culture`,`Enjoyment`,`Learning`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
     // i,d,s,b; where i= integer, d=double, s=string, b=blob -> used for files 
     $stmt->bind_para("sssssssssssssss",$name,$comment,$email,$visitation,$activities,$dining,$restArea,$schools,$art,$music,$sports,$demographics,$culture,$enjoyment,$learning);
@@ -101,7 +104,10 @@
         $demographics=true;
     }
 
-    //unsure on how to check the radio button
+    //ufigure out what to do inside and sanitize it 
+    if(array_key_exists('favPage,', $_POST) && $_POST{'favPage'} !=null){
+
+    }
     
     $stmt->execute();
 
