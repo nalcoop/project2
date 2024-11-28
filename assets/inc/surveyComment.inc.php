@@ -6,8 +6,8 @@
     <!-- update the form to match the site css (once css is finalized) -->
 
 
-<h2><?php echo $row['Name'];?></h2>
-<p><?php echo $row['Message'];?></p>
+<!-- <h2> <?php //echo $row['Name'];?></h2> -->
+<!-- <p><?php //echo $row['Message'];?></p> -->
 
 
    

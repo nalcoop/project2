@@ -49,64 +49,76 @@
     }
 
     $activities=null;
-    if(!array_key_exists($_POST['activities'])){
+    if(!array_key_exists('activities',$_POST)){
        $activities=false;
     }else{
         $activities=true;
     }
 
     $dining=null;
-    if(!array_key_exists($_POST['dining'])){
+    if(!array_key_exists('dining',$_POST)){
        $dining=false;
     }else{
         $dining=true;
     }
 
     $restArea=null;
-    if(!array_key_exists($_POST['restArea'])){
+    if(!array_key_exists('restArea',$_POST)){
        $restArea=false;
     }else{
         $restArea=true;
     }
 
     $schools=null;
-    if(!array_key_exists($_POST['schools'])){
+    if(!array_key_exists('schools',$_POST)){
        $schools=false;
     }else{
         $schools=true;
     }
 
     $art=null;
-    if(!array_key_exists($_POST['art'])){
+    if(!array_key_exists('art',$_POST)){
        $art=false;
     }else{
         $art=true;
     }
 
     $music=null;
-    if(!array_key_exists($_POST['music'])){
+    if(!array_key_exists('music',$_POST)){
        $music=false;
     }else{
         $music=true;
     }
 
     $sports=null;
-    if(!array_key_exists($_POST['sports'])){
+    if(!array_key_exists('sports',$_POST)){
        $sports=false;
     }else{
         $sports=true;
     }
 
     $demographics=null;
-    if(!array_key_exists($_POST['demographics'])){
+    if(!array_key_exists('demographics',$_POST)){
        $demographics=false;
     }else{
         $demographics=true;
     }
 
-    //ufigure out what to do inside and sanitize it 
+    //figure out what to do inside and sanitize it 
     if(array_key_exists('favPage,', $_POST) && $_POST{'favPage'} !=null){
-
+        if(isset($_POST['culture'])){
+            $culture=sanitize($_POST['culture']);
+           return true;
+        } else if (isset($_POST['enjoyment'])){
+            $enjoyment=sanitize($_POST['enjoyment']);
+            return true;
+        } else if (isset($_POST['learning'])){
+            $learning=sanitize($_POST['learning']);
+            return true;
+        }
+        //get the value
+        //sanitize it
+        //store it to a count
     }
     
     $stmt->execute();
