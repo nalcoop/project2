@@ -71,10 +71,16 @@ function changeSlide(step, carouselId) {
 }
 
 function updateCaptions(carouselId,slideIndex){
-  captionArray.forEach((caption,index)=>{
-    if(currentSlides[carouselId] === currentSlides["carousel-museum"])
-      caption.style.display= index === slideIndex ? "block" : "none";
-    });
+  const carousel= document.getElementById(carouselId);
+  const captions= carousel.querySelectorAll(".caption");
+
+  captions.forEach((caption,index)=>{
+  if(index=== slideIndex){
+    caption.style.display="block";
+  } if(index!== slideIndex){
+    caption.style.display="none";
+  }
+});
 }
 
 //google maps w json pins attempts

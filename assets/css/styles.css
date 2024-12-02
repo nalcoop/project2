@@ -13,9 +13,9 @@
 }
 
 body {
-    background-color:FEF8F4;
-    margin:10px;
-    padding:10px;
+    background-color:#FEF8F4;
+    margin-left:20px;
+    padding:20px;
 }
 
 footer{
@@ -30,38 +30,28 @@ h1,h2,h3{
     font-style:normal;
 }
 
-figcaption,li,p{
-    font-family: 14px "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-}
 
-a {
-    font-family: 14px "Barlow", sans-serif;
-    font-weight: 300px;
+figcaption,li,p,a {
+    font-family: 14px "Merriweather", sans-serif;
+    font-weight: 400px;
     text-decoration: none;
     color: black;
 }
 
-h1,
-h3 {
-    font-family: "Oswald", sans-serif;
-    font-optical-sizing: auto;
-    font-variant: small-caps;
-    font-weight: 400;
-    font-style:normal;
-}
 
-#music,#activities, #art, #dining, #home, #location, #school, #sports, #references {
+#music,#art, #home, #school, #sports, #references {
     display: flex;
     flex-wrap: wrap;   
+}
+#dining{
+    display:flex;
+    flex-wrap:nowrap;
 }
 
 
 .section {
     background-color: #210B2C;
-    color: FEF8F4;
+    color: #FEF8F4;
     padding: 16px;
     font-size: 16px;
     border: 1px solid #210B2C;
@@ -78,7 +68,7 @@ h3 {
     max-width: 500px;
     background: #DBDBDB;
     padding: 30px 30px 20px 30px;
-    font:14px "Barlow", sans-serif;
+    font:14px "Merriweather", sans-serif;
     color: #666;
     border-radius: 5px;
 }
@@ -235,7 +225,7 @@ legend{
 .layeredNav {
     overflow: hidden;
     background-color: #FEF8F4;
-    font-family: "Barlow", sans-serif;
+    font-family: "Merriweather", sans-serif;
 }
 
 .layeredNav a {
@@ -267,7 +257,7 @@ legend{
     color: #210B2C;
     padding: 14px 16px;
     background-color: #FEF8F4;
-    font-family: "Barlow", sans-serif;
+    font-family: "Merriweather", sans-serif;
     cursor: pointer;
     
 }
@@ -302,7 +292,10 @@ legend{
 .secondLayer:hover .layerContent {
     display: block; /* Show dropdown on hover */
 }
-
+.specialityEats, .generalEats{
+    display:flex;
+    flex-wrap:wrap;
+}
 
 
 @media only screen and (max-width:600px) {
@@ -326,19 +319,6 @@ legend{
         outline:none;
         z-index:1000000000;
     }
-    /* .cross{
-        background: none;
-        position: absolute;
-        top:0;
-        right:0;
-        padding: 7px 15px 0px 15px;
-        border:0;
-        font-size:3rem;
-        font-weight: bold;
-        cursor:pointer;
-        outline:none;
-        z-index:1000000000;
-    } */
 
     header{
         width:100%;
@@ -373,32 +353,74 @@ legend{
         text-align: left;
     }
 
+    /* music page styles */
+    #djpope {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .jay {
         width: 320px;
         height: 240px;
     }
 
-    .djpope {
-        display: flex;
-
-        flex-wrap: wrap;
-        width: 320px;
-        height: 240px;
+    .djpope-img,
+    .jay-mobile {
+        width: 35%;
+        height: 35%;
+        padding-left: 20px;
     }
 
+    .jay-img {
+        visibility: collapse;
+        height: 0px;
+        width: 0px;
+    }
+
+    .djpope {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px;
+    }
+
+    #music>h3 {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #oldgen {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .newgen{
+        position: relative;
+        bottom:-40px;
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+
+    #music {
+        row-gap: 20px;
+        justify-content: space-evenly;
+    }
+
+
     li {
-        font: 10px "Barlow", sans-serif;
+        font: 10px "Merriweather", sans-serif;
         font-weight: 300px;
     }
 
     figcaption,
     p {
-        font: 12px "Barlow", sans-serif;
+        font: 12px "Merriweather", sans-serif;
         font-weight: 500px;
     }
 
     a {
-        font: 10px "Barlow", sans-serif;
+        font: 10px "Merriweather", sans-serif;
         font-weight: 300px;
         text-decoration: none;
         color: black;
@@ -411,9 +433,7 @@ legend{
     .graffiti,
     .artsdistrict,
     .fedhill-img,
-    .landOfKush,
-    .redEmma,
-    .dodahKitchen, .harmonyBakery, .general{
+    .general, .speciality{
         max-width: 25%;
         max-height: 25%;
     }
@@ -505,50 +525,7 @@ legend{
         flex-direction: row;
     }
 
-    .djpope {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        gap: 20px;
-    }
 
-    .djpope-img,
-    .jay-mobile {
-        width: 35%;
-        height: 35%;
-        padding-left: 20px;
-    }
-
-    .jay-img {
-        visibility: collapse;
-        height: 0px;
-        width: 0px;
-    }
-
-
-    #music>h3 {
-        margin: 0px;
-        padding: 0px;
-    }
-
-    #oldgen {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    #newgen,
-    #newgen-caption {
-        position: relative;
-        bottom:-40px;
-        margin-top: 20px;
-        padding-top: 20px;
-    }
-
-    #music {
-        row-gap: 20px;
-        justify-content: space-evenly;
-    }
 
     .fedhill{
         width:340px;
@@ -565,8 +542,7 @@ legend{
     .fedhill-img,
     .druidhill,
     .cylburnArborteum,
-    .aquarium-img,
-    .scienceCenter, .canton, .harbor, .aquariumVertical-img, .BCC, .western,.BSA,.bard, .poly-img,.demographics{
+    .canton, .harbor, .BCC, .western,.BSA,.bard, .poly-img,.demographics{
         width: 50%;
         height: 50%;
         padding-left: 20px;
@@ -602,12 +578,10 @@ legend{
 
 }
 
-@media only screen and (min-width:800px) { 
+@media only screen and (max-width:800px) { 
 
-    .jay-mobile{
-        display: none;
-    }
-main{
+  
+    main{
     position: relative;
     bottom:-40px;
 }
@@ -621,37 +595,22 @@ main{
 p {
     text-align: left;
 }
-
+/* music styles */
+.jay-mobile{
+    display: none;
+}
 .jay {
-    width: 320px;
-    height: 240px;
+    max-width: 75%;
+    max-height: 75%;
 }
 
-.djpope {
+#djpope {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     gap:40px;
     width: 320px;
     height: 240px;
-}
-
-li {
-    font: 10px "Barlow", sans-serif;
-    font-weight: 300px;
-}
-
-figcaption,
-p {
-    font: 12px "Barlow", sans-serif;
-    font-weight: 500px;
-}
-
-a {
-    font: 10px "Barlow", sans-serif;
-    font-weight: 300px;
-    text-decoration: none;
-    color: black;
 }
 
 .jay-img {
@@ -662,14 +621,32 @@ a {
     max-width: 36%;
     max-height: 36%;
 }
+
+li {
+    font: 10px "Merriweather", sans-serif;
+    font-weight: 300px;
+}
+
+figcaption,
+p {
+    font: 12px "Merriweather", sans-serif;
+    font-weight: 500px;
+}
+
+a {
+    font: 10px "Merriweather", sans-serif;
+    font-weight: 300px;
+    text-decoration: none;
+    color: black;
+}
+
+
 .ravens-img,
 .orioles,
 .graffiti,
 .artsdistrict,
 .fedhill-img,
-.landOfKush,
-.redEmma,
-.dodahKitchen, .harmonyBakery, .general{
+.general, .speciality{
     max-width: 25%;
     max-height: 25%;
 }
@@ -678,10 +655,7 @@ a {
         flex-wrap: wrap;
         flex-direction: column;
 }
-.jay {
-    max-width: 75%;
-    max-height: 75%;
-}
+
 
 /* make hamburger menu ASAP  */
 
@@ -713,7 +687,7 @@ a {
 .fedhill-img,
 .druidhill,
 .cylburnArborteum,
-.scienceCenter, .canton ,.harbor,.demographics,.graffiti{
+.canton ,.harbor,.demographics,.graffiti{
     width:30%;
     height:30%;
     padding-left:20px;
@@ -791,7 +765,7 @@ iframe{
 }
 }
 
-@media only screen and (max-width:801px) {
+/* @media only screen and (max-width:801px) {
     h1,h2,h3{
         font-family: "Oswald", sans-serif; 
         font-size: 1.2rem;
@@ -805,7 +779,7 @@ iframe{
     }
     
     a {
-        font-family: "Barlow", sans-serif;
+        font-family: "Merriweather", sans-serif;
         font-size: 1.2rem;
         text-decoration: none;
         color: black;
@@ -979,9 +953,7 @@ iframe{
         justify-content: space-evenly;
     }
 
-    .landOfKush,
-    .redEmma,
-    .dodahKitchen, .harmonyBakery, .general{
+    .speciality, .general{
         max-width: 35%;
         max-height: 35%;
     }
@@ -1036,7 +1008,7 @@ iframe{
     .fedhill-img,
     .druidhill,
     .cylburnArborteum,
-    .scienceCenter, .canton ,.harbor,.demographics,.graffiti{
+ .canton ,.harbor,.demographics,.graffiti{
         width:30%;
         height:30%;
         padding-left:20px;
@@ -1080,288 +1052,290 @@ iframe{
         max-height: 45%;
         max-width:45%;
     }
-}
+} */
 
-@media only screen and (min-width:1000px) {
-    h1,h2,h3{
-        font-family: "Oswald", sans-serif; 
-        font-size: 1.2rem;
-    }
-    
-    figcaption,li,p{
-        font-family:  "Oswald", sans-serif;
-        font-size: 1.2rem;
-    }
-    
-    a {
-        font-family: "Barlow", sans-serif;
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: black;
-    }
-    main{
-        position: relative;
-        bottom:-40px;
-    }
+    @media only screen and (min-width:1180px) {
+
+
+        #hamburger{
+            visibility: hidden;
+        }
+     
+        h1,h2,h3, figcaption,li,p{
+            font-size: 1.4rem;
+        }
         
-
-    #home,
-    #enjoyment,
-    #other,
-    #culture,
-    #learning {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .ravens-img,
-    .orioles,
-    .artsdistrict,
-    .fedhill-img,
-    .BCC,
-    .western,
-    .FourSeasons,
-    .spb,
-    .ivyHotel,
-    .wharf {
-        max-width: 35%;
-        max-height: 35%;
-    }
-
-    .djpope-img {
-        max-width: 61%;
-        max-height: 61%;
-    }
-
-    .jay-img {
-        max-width: 60%;
-        max-height: 60%
-    }
-
-    .djpope {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-       
-    }
-
-    .newgen{
-       display:flex;
-       flex-direction: column;
-       flex-wrap: wrap;
-    }
-    #newgen{
-        position: relative;
-        bottom: 0px;
-        margin: 0px;
-        padding:10px;
-        gap:10px;
-        height:300px;
-    }
-    #home-structure>aside {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 18px;
-    }
-
-    #other-structure>aside {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 18px;
-    }
-
-    #culture-structure>aside {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 18px;
-    }
-
-    #enjoyment-structure>aside {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 18px;
-    }
-
-    #learning-structure>aside {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 18px;
-    }
-
-    .graffiti {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .home-grid {
-        display: grid;
-        grid-template-areas: "dropdown" "dropdown";
-        grid-gap: 50px;
-        grid-template-columns: auto auto;
-        padding-top: 20px;
-        justify-content: center;
-    }
-
-    #home,
-    #other,
-    #culture,
-    #learning,
-    #enjoyment {
-        padding: 20px;
-    }
-
-    #culutre>h3 {
-        position: relative;
-        text-align: center;
-    }
-
-    #enjoyment>h3 {
-        position: relative;
-        text-align: center;
-    }
-
-    #other>h3 {
-        position: relative;
-        text-align: center;
-    }
-
-    #home>h3 {
-        position: relative;
-        text-align: center;
-    }
-
-    .section {
-        background-color: #210B2C;
-        color: #DBDBDB;
-        padding: 25px;
-        height: 100px;
-        width: 150px;
-        font-size: 16px;
-        border: 1px solid #210B2C;
-        text-align: center;
-    }
-
-    .section:hover {
-        background-color: #5E6572;
-    }
- 
-
-    .learning-grid,
-    .other-grid {
-        display: grid;
-        grid-template-areas: "dropdown" "dropdown";
-        grid-gap: 50px;
-        grid-template-columns: auto auto;
-        padding-top: 20px;
-        margin-top: 20px;
-        justify-content: center;
-    }
-
-    .culture-grid {
-        display: grid;
-        grid-template-areas: "dropdown" "dropdown" "dropdown";
-        grid-gap: 50px;
-        grid-template-columns: auto auto auto;
-        padding-top: 20px;
-        margin-top: 40px;
-        justify-content: center;
-    }
-    #music {
-        row-gap: 20px;
-        justify-content: space-evenly;
-    }
-
-    .landOfKush,
-    .redEmma,
-    .dodahKitchen, .harmonyBakery, .general{
-        max-width: 35%;
-        max-height: 35%;
-    }
-
-    .fedhill,
-    .twoStudio,
-    .aquarium, .poly{
-        width: 320px;
-        height: 240px;
-    }
-    #aquarium,#aquarium-img{
-       display: flex;
-       flex-wrap: wrap;
-       flex-direction:row;
-       gap:50px;  
-    }
-
-    .fedhill{
-        padding-left:20px;
-    }
-
-    .aquarium-img{
-        width:30%;
-        height:30%;
-        padding-right:10px;
-    }
-    .aquariumVertical-img{
-        height:31%;
-        width:31%;
-    }
-
-    .fedhill-img,
-    .druidhill,
-    .cylburnArborteum,
-    .scienceCenter, .canton ,.harbor,.demographics,.graffiti{
-        width:30%;
-        height:30%;
-        padding-left:20px;
-    }
-
-    #graffiti{
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .poly-img, .BCC, .western,.BSA,.bard{
-        max-width: 40%;
-        max-height: 40%;
-    }
+        a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            color: black;
+        }
+        main{
+            position: relative;
+            bottom:-40px;
+        }
+            
     
-    .poly-img{
-        width:45%;
-        height:45%;
-    }
-    .jay-mobile{
-        visibility: collapse;
-        height: 0px;
-        width:0px;
-    }
+        #home,
+        #enjoyment,
+        #other,
+        #culture,
+        #learning {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .ravens-img,
+        .orioles,
+        .artsdistrict,
+        .fedhill-img,
+        .BCC,
+        .western,
+        .FourSeasons,
+        .spb,
+        .ivyHotel,
+        .wharf {
+            max-width: 35%;
+            max-height: 35%;
+        }
+        
+        /* music styles */
+        .djpope-img {
+            max-width: 61%;
+            max-height: 61%;
+        }
+    
+        .jay-img {
+            max-width: 60%;
+            max-height: 60%
+        }
+    
+        .djpope {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+           
+        }
+    
+        .newgen{
+           display:flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+        }
+        #newgen{
+            position: relative;
+            bottom: 0px;
+            margin: 0px;
+            padding:10px;
+            gap:10px;
+            height:300px;
+        }
 
-    .educational{
-        display:flex;
-        flex:wrap;
-        direction:row;
-        gap:40px;
-        padding: 10px 12px;
-    }
-    .educational2{
-        display:flex;
-        flex:wrap;
-        direction:row;
-        gap:40px;
-        padding: 10px 12px;
-    }
-    #aquarium{
-        display:flex;
-        flex-wrap:nowrap;
-    }
+        #popularSound{
+            display:flex;
+            flex-wrap:nowrap;
+            margin:10px;
+            padding:10px;
+        }
 
-    #table{
-        display:grid;
-    }
-    #carousel-museum{
-        max-height: 55%;
-        max-width:55%;
-    }
+        #home-structure>aside {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 18px;
+        }
+    
+        #other-structure>aside {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 18px;
+        }
+    
+        #culture-structure>aside {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 18px;
+        }
+    
+        #enjoyment-structure>aside {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 18px;
+        }
+    
+        #learning-structure>aside {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 18px;
+        }
+    
+        .graffiti {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    
+        .home-grid {
+            display: grid;
+            grid-template-areas: "dropdown" "dropdown";
+            grid-gap: 50px;
+            grid-template-columns: auto auto;
+            padding-top: 20px;
+            justify-content: center;
+        }
+    
+        #home,
+        #other,
+        #culture,
+        #learning,
+        #enjoyment {
+            padding: 20px;
+        }
+    
+        #culutre>h3 {
+            position: relative;
+            text-align: center;
+        }
+    
+        #enjoyment>h3 {
+            position: relative;
+            text-align: center;
+        }
+    
+        #other>h3 {
+            position: relative;
+            text-align: center;
+        }
+    
+        #home>h3 {
+            position: relative;
+            text-align: center;
+        }
+    
+        .section {
+            background-color: #210B2C;
+            color: #DBDBDB;
+            padding: 25px;
+            height: 100px;
+            width: 150px;
+            font-size: 16px;
+            border: 1px solid #210B2C;
+            text-align: center;
+        }
+    
+        .section:hover {
+            background-color: #5E6572;
+        }
+     
+    
+        .learning-grid,
+        .other-grid {
+            display: grid;
+            grid-template-areas: "dropdown" "dropdown";
+            grid-gap: 50px;
+            grid-template-columns: auto auto;
+            padding-top: 20px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+    
+        .culture-grid {
+            display: grid;
+            grid-template-areas: "dropdown" "dropdown" "dropdown";
+            grid-gap: 50px;
+            grid-template-columns: auto auto auto;
+            padding-top: 20px;
+            margin-top: 40px;
+            justify-content: center;
+        }
+        #music {
+            row-gap: 20px;
+            justify-content: space-evenly;
+        }
+    
+      .speciality, .general{
+            max-width: 35%;
+            max-height: 35%;
+        }
+    
+        .fedhill,
+        .twoStudio,
+        .aquarium, .poly{
+            width: 320px;
+            height: 240px;
+        }
+      
+    
+        .fedhill{
+            padding-left:20px;
+        }
+    
+
+    
+        .fedhill-img,
+        .druidhill,
+        .cylburnArborteum,
+        .canton ,.harbor,.demographics,.graffiti{
+            width:30%;
+            height:30%;
+            padding-left:20px;
+        }
+    
+        #graffiti{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+    
+        .poly-img, .BCC, .western,.BSA,.bard{
+            max-width: 40%;
+            max-height: 40%;
+        }
+        
+        .poly-img{
+            width:45%;
+            height:45%;
+        }
+        .jay-mobile{
+            visibility: collapse;
+            height: 0px;
+            width:0px;
+        }
+    
+        .educational{
+            display:flex;
+            flex:wrap;
+            direction:row;
+            gap:40px;
+            padding: 10px 12px;
+        }
+        .educational2{
+            display:flex;
+            flex:wrap;
+            direction:row;
+            gap:40px;
+            padding: 10px 12px;
+        }
+        #aquarium{
+            display:flex;
+            flex-wrap:nowrap;
+        }
+    
+        #table{
+            display:grid;
+        }
+        #carousel-museum{
+            max-height: 55%;
+            max-width:55%;
+        }
+    
+        #map{
+            visibility: visible;
+        }
+
+        #dining{
+            display:flex;
+            flex-wrap:nowrap;
+        }
 
 
-}
+    }

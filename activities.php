@@ -11,23 +11,31 @@
    
     <figure class="carousel" id="carousel-museum">
     <div class="carousel-img">   
+        <div class="carousel-slide">
         <img class="museums active" src="assets/images/museum1.jpg" alt="Walters Art Museum exterior">
                 <figure id="walters" class="caption" >
                     <figcaption> Walters Art Museum: 600 N Charles St. Focused on diversity, inclusion, equity, and accessibility.</figcaption>
                 </figure>
+        </div>
+        <div class="carousel-slide">
             <img class="museums" src="assets/images/museum2.jpeg" alt="Baltimore Museum of Art exterior">
                 <figure id="bma" class="caption" >
                     <figcaption> Baltimore Museum of Art: 10 Art Museum Drive. A free local art museum on Johns Hopkins University Campus.</figcaption>
                 </figure>
+        </div>
+        <div class="carousel-slide">
             <img  class="museums" src="assets/images/museum3.jpeg" alt="Blacks in Wax exterior">
                 <figure id="blacksInWaxs" class="caption">
                     <figcaption> The National Great Blacks in Wax: 1601-03 East North Ave. Learn about historical Black figures.</figcaption>
                 </figure>
+        </div>
+        <div class="carousel-slide">
             <img class="museums" src="assets/images/museum4.jpg" alt="Reginald F Lewis Museum exterior">
                 <figure id ="rfl" class="caption">
                     <figcaption> Reginald F. Lewis Museum: 830 E Pratt St. Highlights African American history and culture.</figcaption>
                 </figure>
             </div>
+        </div>
             <button class="previous" onclick="changeSlide(-1,'carousel-museum')">&#10094;</button>
             <button class="next" onclick="changeSlide(1,'carousel-museum')">&#10095;</button>
 
@@ -37,6 +45,7 @@
         <!-- Possibly google map pins -->
         <section> 
             <figure>
+                <!-- find images for this section -->
                 <figcaption>Amazing Glaze, located at 1340 Smith Ave. A creative space for pottery and canvas painting for all ages.<figcaption>
             </figure>
            
@@ -97,20 +106,20 @@
             </figure>
         </section>
 
-        <h3>Scenic Areas</h3>
+        <!-- <h3>Scenic Areas</h3>
         <section>
             <p>Relax at beautiful waterfronts or stroll through parks, many of which have amenities for kids.</p>
             
-            <!-- Canton Waterfront Park -->
+       
             <figure> 
                 <img class="canton" src="assets/images/canton.jpg" alt="Canton Waterfront Park at sunset">
                 <img class="canton" src="assets/images/cantonWater.jpg" alt="Canton Waterfront Park walkway">
                 <figcaption>Canton Waterfront Park: Located within downtown Baltimore, featuring shops and restaurants.</figcaption>
             </figure>
 
-            <!-- Additional scenic areas can be added here -->
+   
 
-        </section>
+        </section> -->
     </article>  
 <?php
     include('./assets/inc/footer.inc.php');
