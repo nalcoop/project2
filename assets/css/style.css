@@ -32,7 +32,7 @@ h1,h2,h3{
 
 
 figcaption,li,p,a {
-    font-family: 14px "Merriweather", sans-serif;
+    font-family: 14px "Merriweather", serif;
     font-weight: 400px;
     text-decoration: none;
     color: black;
@@ -68,7 +68,7 @@ figcaption,li,p,a {
     max-width: 500px;
     background: #DBDBDB;
     padding: 30px 30px 20px 30px;
-    font:14px "Merriweather", sans-serif;
+    font:14px "Merriweather", serif;
     color: #666;
     border-radius: 5px;
 }
@@ -225,7 +225,7 @@ legend{
 .layeredNav {
     overflow: hidden;
     background-color: #FEF8F4;
-    font-family: "Merriweather", sans-serif;
+    font-family: "Merriweather", serif;
 }
 
 .layeredNav a {
@@ -257,7 +257,7 @@ legend{
     color: #210B2C;
     padding: 14px 16px;
     background-color: #FEF8F4;
-    font-family: "Merriweather", sans-serif;
+    font-family: "Merriweather", serif;
     cursor: pointer;
     
 }
@@ -411,18 +411,18 @@ legend{
 
 
     li {
-        font: 10px "Merriweather", sans-serif;
+        font: 10px "Merriweather", serif;
         font-weight: 300px;
     }
 
     figcaption,
     p {
-        font: 12px "Merriweather", sans-serif;
+        font: 12px "Merriweather", serif;
         font-weight: 500px;
     }
 
     a {
-        font: 10px "Merriweather", sans-serif;
+        font: 10px "Merriweather", serif;
         font-weight: 300px;
         text-decoration: none;
         color: black;
@@ -617,24 +617,12 @@ p {
     max-width: 36%;
     max-height: 36%;
 }
-
-li {
-    font: 10px "Merriweather", sans-serif;
-    font-weight: 300px;
-}
-
 figcaption,
-p {
-    font: 12px "Merriweather", sans-serif;
-    font-weight: 500px;
+p,a, li{
+   font-size: 1.2rem;
 }
 
-a {
-    font: 10px "Merriweather", sans-serif;
-    font-weight: 300px;
-    text-decoration: none;
-    color: black;
-}
+
 
 
 .ravens-img,
