@@ -44,7 +44,7 @@
             <h3>Geographic Location</h3>
             <figure>
                 <div id="map">
-                <iframe class="map" src="https://www.google.com/maps/embed/v1/MAP_MODE?key=AIzaSyBQRDlqUjx3DSj5uw24sPtYIA6TBMm3FTE&parameters"    width="640" height="480"></iframe>
+                <iframe class="map" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDTu6mVUwgo7qk271gipyAU_hCvLy0RDaE&signature=5htl5-2nuZxiqCPrtZpYODdfy5M="    width="640" height="480"></iframe>
                 </div>
            
                 <figcaption>
