@@ -43,36 +43,33 @@
     $culture=isset($_POST['culture']) ? sanitize($_POST['culture']) : null;
     $enjoyment=isset($_POST['enjoyment']) ? sanitize($_POST['enjoyment']) : null;
     $learning=isset($_POST['learning']) ? sanitize($_POST['learning']) : null;
-
+    $favPage=isset($_POST['favPage'])? sanitize($_POST['favPage']) : null;
     
     if(!emailCheck($email)){
         echo 'You have provided an invalid email address.';
         exit();
     }
 
-    if(isset($_POST['favPage']) && empty($_POST['favPage'])){
-        if (isset($_POST['culture'])){
-            $culture=false;
-            $culture=sanitize($_POST['culture']);
-          
-        }if (isset($_POST['enjoyment'])){
-            $enjoyment=false;
-            $enjoyment=sanitize($_POST['enjoyment']);
-           
-        }if (isset($_POST['learning'])){
-            $learning=false;
-            $learning=sanitize($_POST['learning']);
-            
-        }
-        //get the value
-        //sanitize it
-        //store it to a count
+    if($favPage===null){
+        echo 'Please select a favorite page.';
     }
 
+    switch($favPage){
+        case 'culture':
+            $culture=true;
+            break;
+        case 'enjoyment':
+            $enjoyment=true;
+            break;
+        case 'learning':
+            $learning=true;
+            break;
+        default:
+            echo 'Invlaid selection';
+            exit();
+    }
 
     $stmt->execute();
-
-
 
     if($stmt->error){
         print_r($stmt->error);

@@ -30,7 +30,9 @@
         <legend>Select your favorite content section</legend>
         <!-- add to adminer -->
         <input type="radio" id="culture" name="favPage" value="culture"><label for="culture">Culture</label> 
+        <br>
         <input type="radio" id="enjoyment" name="favPage" value="enjoyment"><label for="enjoyment">Enjoyment</label>
+        <br>
         <input type="radio" id= "learning" name="favPage" value="learning"><label for="learning">Learning</label>
     </fieldset>
     <div class="indent">
@@ -38,18 +40,12 @@
        <label for="message">Leave feedback about your experience?</label>
        <input type="textarea" id="message" name="message"> 
     </div>
-            <input type="submit" class="button" value="send">
+            <button type="submit">Submit</button>
     </form>
 <hr>
 <?php
 
 $sql= "SELECT `Name`, `Message` FROM Survey";
 
-//     if($result=$mysqli ->query($sql)){
-//         while($row = $result -> fetch_assoc()){
-//             include("assets/inc/survey.inc.php");
-//         }
-//         $result->free_result();
-// }
 include('./assets/inc/footer.inc.php');
 ?>
