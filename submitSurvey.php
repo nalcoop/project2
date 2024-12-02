@@ -52,15 +52,15 @@
 
     if(isset($_POST['favPage']) && empty($_POST['favPage'])){
         if (isset($_POST['culture'])){
-            $culture!=null;
+            $culture=false;
             $culture=sanitize($_POST['culture']);
           
         }if (isset($_POST['enjoyment'])){
-            $enjoyment!=null;
+            $enjoyment=false;
             $enjoyment=sanitize($_POST['enjoyment']);
            
         }if (isset($_POST['learning'])){
-            $learning!=null;
+            $learning=false;
             $learning=sanitize($_POST['learning']);
             
         }
@@ -69,73 +69,7 @@
         //store it to a count
     }
 
-    // $activities=null;
-    // if(isset($_POST['activities'])){
-    //    $activities=false;
-    // }else{
-    //     $activities=true;
-    //     $activities=sanitize($_POST['activities']);
-    // }
 
-    // $dining=null;
-    // if(isset($_POST['dining'])){
-    //    $dining=false;
-    // }else{
-    //     $dining=true;
-    //     $dining=sanitize($_POST['dining']);
-    // }
-
-    // $restArea=null;
-    // if(isset($_POST['restArea'])){
-    //    $restArea=false;
-    // }else{
-    //     $restArea=true;
-    //     $restArea=sanitize($_POST['restArea']);
-    // }
-
-    // $schools=null;
-    // if(isset($_POST['schools'])){
-    //    $schools=false;
-    // }else{
-    //     $schools=true;
-    //     $schools=sanitize($_POST['schools']);
-    // }
-
-    // $art=null;
-    // if(isset($_POST['art'])){
-    //    $art=false;
-    // }else{
-    //     $art=true;
-    //     $art=sanitize($_POST['art']);
-    // }
-
-    // $music=null;
-    // if(isset($_POST['music'])){
-    //    $music=false;
-    // }else{
-    //     $music=true;
-    //     $music=sanitize($_POST['music']);
-    // }
-
-    // $sports=null;
-    // if(isset($_POST['sports'])){
-    //    $sports=false;
-    // }else{
-    //     $sports=true;
-    //     $sports=sanitize($_POST['sports']);
-    // }
-
-    // $demographics=null;
-    // if(isset($_POST['demographics'])){
-    //    $demographics=false;
-    // }else{
-    //     $demographics=true;
-    //     $demographics=sanitize($_POST['demographics']);
-    // }
-
-    //figure out what to do inside and sanitize it 
-
-    
     $stmt->execute();
 
 
