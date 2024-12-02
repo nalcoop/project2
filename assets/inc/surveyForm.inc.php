@@ -17,7 +17,6 @@
 
             
                 <p>Select visited pages</p>    
-                <!-- add to adminer -->
                 <input type="checkbox" id="activities" name="activities"> <label>Activities</label> 
                 <input type="checkbox" id="dining" name="dining"><label>Best Dining</label> 
                 <input type="checkbox" id="restArea" name="restArea"><label>Quality Comfort</label>  

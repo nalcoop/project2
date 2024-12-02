@@ -50,14 +50,17 @@
         exit();
     }
 
-    if(isset($_POST['favPage']) && !empty($_POST['favPage'])){
+    if(isset($_POST['favPage']) && empty($_POST['favPage'])){
         if (isset($_POST['culture'])){
+            $culture!=null;
             $culture=sanitize($_POST['culture']);
           
         }if (isset($_POST['enjoyment'])){
+            $enjoyment!=null;
             $enjoyment=sanitize($_POST['enjoyment']);
            
         }if (isset($_POST['learning'])){
+            $learning!=null;
             $learning=sanitize($_POST['learning']);
             
         }
