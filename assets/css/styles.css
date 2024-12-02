@@ -362,6 +362,7 @@ legend{
     .jay {
         width: 320px;
         height: 240px;
+        padding-left:10px;
     }
 
     .djpope-img,
@@ -382,6 +383,7 @@ legend{
         flex-direction: column;
         flex-wrap: nowrap;
         gap: 20px;
+        padding-left:10px;
     }
 
     #music>h3 {
@@ -580,12 +582,6 @@ legend{
 
 @media only screen and (max-width:800px) { 
 
-  
-    main{
-    position: relative;
-    bottom:-40px;
-}
-
 .menu>div{
     width:35px;
     height:5px;
@@ -765,298 +761,8 @@ iframe{
 }
 }
 
-/* @media only screen and (max-width:801px) {
-    h1,h2,h3{
-        font-family: "Oswald", sans-serif; 
-        font-size: 1.2rem;
-       
-    }
-    
-    figcaption,li,p{
-        font-family:  "Oswald", sans-serif;
-        font-size: 1.2rem;
-       
-    }
-    
-    a {
-        font-family: "Merriweather", sans-serif;
-        font-size: 1.2rem;
-        text-decoration: none;
-        color: black;
-    }
-    
-    main{
-        position: relative;
-        bottom:-40px;
-    }
-
-    #home,
-    #enjoyment,
-    #other,
-    #culture,
-    #learning {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
-
-    iframe{
-        width:400px;
-        height:250px;
-    }
-    .ravens-img,
-    .orioles,
-    .artsdistrict,
-    .fedhill-img,
-    .djpope-img .BCC,
-    .western,
-    .FourSeasons,
-    .spb,
-    .ivyHotel,
-    .wharf {
-        max-width: 35%;
-        max-height: 35%;
-    }
-
-    .djpope-img {
-        max-width: 36%;
-        max-height: 36%;
-    }
-
-    .jay-img {
-        max-width: 35%;
-        max-height: 35%;
-    }
-
-    .djpope {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
-    #home-structure>aside {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 18px;
-    }
-
-    #other-structure>aside {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 18px;
-    }
-
-    #culture-structure>aside {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 18px;
-    }
-
-    #enjoyment-structure>aside {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 18px;
-    }
-
-    #learning-structure>aside {
-        display: flex;
-        flex-wrap: wrap;
-        font-size: 18px;
-    }
-
-    .graffiti {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .home-grid {
-        display: grid;
-        grid-template-areas: "dropdown" "dropdown";
-        grid-gap: 50px;
-        grid-template-columns: auto auto;
-        padding-top: 20px;
-        justify-content: center;
-    }
-
-    #home,
-    #other,
-    #culture,
-    #learning,
-    #enjoyment {
-        padding: 20px;
-    }
-
-    #culutre>h3 {
-        position: relative;
-        text-align: center;
-    }
-
-    #enjoyment>h3 {
-        position: relative;
-        text-align: center;
-    }
-
-    #other>h3 {
-        position: relative;
-        text-align: center;
-    }
-
-    #home>h3 {
-        position: relative;
-        text-align: center;
-    }
-
-    .section {
-        background-color: #210B2C;
-        color: #DBDBDB;
-        padding: 25px;
-        height: 100px;
-        width: 150px;
-        font-size: 16px;
-        border: 1px solid #210B2C;
-        text-align: center;
-    }
-
-    .section:hover {
-        background-color: #5E6572;
-    }
-    #newgen{
-        display:flex;
-        flex-wrap:wrap;
-        gap:20px;
-    }
-
-    .learning-grid,
-    .other-grid {
-        display: grid;
-        grid-template-areas: "dropdown" "dropdown";
-        grid-gap: 50px;
-        grid-template-columns: auto auto;
-        padding-top: 20px;
-        margin-top: 20px;
-        justify-content: center;
-    }
-
-    .culture-grid {
-        display: grid;
-        grid-template-areas: "dropdown" ;
-        grid-gap: 50px;
-        grid-template-columns: auto;
-        padding-top: 20px;
-        margin-top: 40px;
-        justify-content: center;
-    }
-    #music {
-        row-gap: 20px;
-        justify-content: space-evenly;
-    }
-
-    .speciality, .general{
-        max-width: 35%;
-        max-height: 35%;
-    }
-
-    .fedhill,
-    .twoStudio,
-    .aquarium, .poly{
-        width: 320px;
-        height: 240px;
-    }
-    #aquarium,#aquarium-img{
-       display: flex;
-       flex-wrap: wrap;
-       flex-direction:row;
-       gap:50px;  
-    }
-    .educational{
-        display:flex;
-        flex:wrap;
-        direction:row;
-        gap:40px;
-        padding: 10px 12px;
-    }
-    .educational2{
-        display:flex;
-        flex:wrap;
-        direction:row;
-        gap:40px;
-        padding: 10px 12px;
-    }
-
-    .fedhill{
-        padding-left:20px;
-    }
-
-    .aquarium-img{
-        width:30%;
-        height:30%;
-        padding-right:10px;
-    }
-    .aquariumVertical-img{
-        height:31%;
-        width:31%;
-    }
-
-    .orioles,.ravens-img{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        padding-top:20px;
-}
-    .fedhill-img,
-    .druidhill,
-    .cylburnArborteum,
- .canton ,.harbor,.demographics,.graffiti{
-        width:30%;
-        height:30%;
-        padding-left:20px;
-    }
-
-    #graffiti{
-        display:flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .poly-img, .BCC, .western,.BSA,.bard{
-        max-width: 40%;
-        max-height: 40%;
-    }
-    
-    .poly-img{
-        width:45%;
-        height:45%;
-    }
-    .jay-mobile{
-        visibility: collapse;
-        height: 0px;
-        width:0px;
-    }
-    .djpope {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        gap:40px;
-        width: 320px;
-        height: 240px;
-    }
-    
-    .poly-img, .BCC, .western,.BSA,.bard{
-        max-width: 40%;
-        max-height: 40%;
-    }
-    
-    #carousel-museum{
-        max-height: 45%;
-        max-width:45%;
-    }
-} */
 
     @media only screen and (min-width:1180px) {
-
-
         #hamburger{
             visibility: hidden;
         }
@@ -1070,12 +776,7 @@ iframe{
             text-decoration: none;
             color: black;
         }
-        main{
-            position: relative;
-            bottom:-40px;
-        }
             
-    
         #home,
         #enjoyment,
         #other,
