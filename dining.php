@@ -1,41 +1,39 @@
 <?php
     include('./assets/inc/header.inc.php');
 ?>
-    
+     <header>
+            <h2>Delectable Dining</h2>
+    </header>
     <main id="dining">
-        <article>
-            <header>
-                <h2>Delectable Dining</h2>
-            </header>
-            
+        <article>   
             <p>Pick from some of Baltimore's finest dining that will satisfy all audiences and dietary restrictions.</p>
             
                 <header>
                     <h3>Food to satisfy all people!</h3>
                 </header>
-                <section>
+                <section id="general">
                 <figure class="generalEats">
                     <img class="general" src="assets/images/charleston.jpg" alt="Photo of the main dining area of the resturant.">
                     <figcaption>
-                        Charleston Restaurant:1000 Lancaster St
+                        Charleston Restaurant:1000 Lancaster St, Baltimore,MD 21202
                     </figcaption>
                 </figure>
                 <figure class="generalEats">
                     <img class="general" src="assets/images/nickfish.jpg" alt="Photo of the exterior of the resturant,Nick's Fish House.">
                     <figcaption>
-                        Nick's Fish House: 2600 Insulator Dr
+                        Nick's Fish House: 2600 Insulator Dr, Baltimore,MD 21230
                     </figcaption>
                 </figure>
                 <figure class="generalEats">
                     <img class="general" src="assets/images/bluemoon.jpg" alt="Photo of the exterior of the resturant,Blue Moon Cafe.">
                     <figcaption>
-                        Blue Moon Cafe: 1621 Aliceanna St
+                        Blue Moon Cafe: 1621 Aliceanna St, Baltimore, MD 21231
                     </figcaption>
                 </figure>
                 <figure class="generalEats">
                     <img class="general" src="assets/images/waterforchoolate.jpg" alt="Photo of the exterior of the resturant,Water for Chocolate.">
                     <figcaption>
-                       Water for Chocolate: 1841 E Lombard St
+                       Water for Chocolate: 1841 E Lombard St, Baltimore,MD 21231
                     </figcaption>
                 </figure>
             </section>
@@ -47,7 +45,7 @@
                     <h3>Food for the vegetarian/vegan crowd!</h3>
                 </header>
           
-                <section>
+                <section id="special">
                 <figure class="specialityEats">
                     <img class="speciality" src="assets/images/RedEmma.jpg" alt="Photo of local vegan resturant/bookstore Red Emma's">
                     <figcaption>Red Emma's Bookstore Coffeehouse: 3128 Greenmount Ave, Baltimore,MD 21218</figcaption>

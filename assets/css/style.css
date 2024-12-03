@@ -400,6 +400,11 @@ main{
         justify-content: space-evenly;
     }
 
+    /* dining styles */
+    #dining{
+        display:flex;
+        flex-wrap:wrap;
+    }
 
     li {
         font: 10px "Merriweather", serif;
@@ -1000,6 +1005,10 @@ iframe{
             max-height: 55%;
             max-width:55%;
         }
+        .aquarium{
+            width:400px;
+            height:320px;
+        }
     /* dining styles */
         #dining{
             display:flex;
@@ -1009,10 +1018,15 @@ iframe{
         .specialityEats, .generalEats{
             display:flex;
             flex-wrap:nowrap;
+            gap:20px;
         }
         .speciality, .general{
             max-width: 35%;
-            max-height: 35%;
+            max-height: 35%;  
         }
+        #special{
+            margin-top:20px;
+        }
+
 
     }
