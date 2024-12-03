@@ -1,5 +1,5 @@
 <?php
-    require_once('/home/MAIN/nic4340/connection.db.php');
+    include('/home/MAIN/nic4340/connection.db.php');
     require_once('assets/inc/tools.inc.php');
     require_once('assets/inc/validation.inc.php');
 ?>

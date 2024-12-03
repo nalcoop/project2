@@ -33,8 +33,8 @@
         </article>
 
         <article class="newgen">
-            <h3>As the generations continue on</h3>
-            <figcaption>So does the unique Baltimore sound. Even legacies have started to form through the generations. DJ Pope's son, Jay the DJ, has created his own unique sound, fusing together the classic Baltimore club beats with the new wave Baltimore talent that has emerged.</figcaption>
+            <h3>As The Generations Continue On</h3>
+            <p>So does the unique Baltimore sound. Even legacies have started to form through the generations. DJ Pope's son, Jay the DJ, has created his own unique sound, fusing together the classic Baltimore club beats with the new wave Baltimore talent that has emerged.</p>
             <figure id="newgen">
                 <img class="jay-img" src="assets/images/DjJayV2.jpg" alt="Photo of Jordan Pope Jr. aka Jay the DJ">
                 <img class="jay-mobile" src="assets/images/DjJay-3.jpg" alt="Photo of Jordan Pope Jr. aka Jay the DJ">
@@ -47,10 +47,10 @@
                     <source src="assets/images/jaythedj2.mov" type="video/mp4">
                     <source src="jaythedj2.ogg" type="video/ogg">
                 </video>
+                <figcaption>DJ Jay performing at a local hookah longe.</figcaption>
+        
             </div>
-            <figure>
-                <figcaption>DJ Jay performing at a local hookah longe</figcaption>
-            </figure>    
+              
         </article>
 
         
