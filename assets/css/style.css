@@ -28,6 +28,7 @@ h1,h2,h3{
     font-optical-sizing: auto;
     font-weight: 600;
     font-style:normal;
+    text-align: center;
 }
 
 
@@ -292,10 +293,7 @@ legend{
 .secondLayer:hover .layerContent {
     display: block; /* Show dropdown on hover */
 }
-.specialityEats, .generalEats{
-    display:flex;
-    flex-wrap:nowrap;
-}
+
 main{
     position: relative;
     bottom:-40px;
@@ -356,6 +354,7 @@ main{
     #djpope {
         display: flex;
         flex-wrap: wrap;
+        gap:40px;
     }
 
     .jay {
@@ -394,13 +393,6 @@ main{
         position: relative;
         display: flex;
         flex-wrap: wrap;
-    }
-
-    .newgen{
-        position: relative;
-        bottom:-40px;
-        margin-top: 20px;
-        padding-top: 20px;
     }
 
     #music {
@@ -603,6 +595,7 @@ p {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    gap:40px;
 }
 
 .jay-img {
@@ -710,19 +703,14 @@ iframe{
     max-width: 35%;
     max-height: 35%;
 }
-.aquarium-img{
-    height: 30%;
-    width:30%;
-}
-.aquariumVertical-img{
-    height:31%;
-    width:31%;
-}
-#aquarium,#aquarium-img{
+
+
+#aquarium{
     display: flex;
     flex-wrap: wrap;
     flex-direction:row;
     gap:50px;  
+    padding:10px 12px;
  }
 
  #carousel-museum{
@@ -732,7 +720,6 @@ iframe{
 .educational{
     display:flex;
     flex:wrap;
-    direction:row;
     gap:40px;
     padding: 10px 12px;
 }
@@ -746,7 +733,7 @@ iframe{
 }
 
 
-    @media only screen and (min-width:1180px) {
+@media only screen and (min-width:1180px) {
         #hamburger{
             visibility: hidden;
         }
@@ -798,6 +785,7 @@ iframe{
             display: flex;
             flex-direction: row;
             flex-wrap: nowrap;
+            gap:40px;
         }
       
         .djpope-img {
@@ -808,12 +796,6 @@ iframe{
         .jay-img {
             max-width: 75%;
             max-height:75%;
-        }
-    
-        #djpope {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;  
         }
     
         .newgen{
@@ -950,10 +932,7 @@ iframe{
             justify-content: space-evenly;
         }
     
-      .speciality, .general{
-            max-width: 35%;
-            max-height: 35%;
-        }
+
     
         .fedhill,
         .twoStudio,
@@ -998,7 +977,7 @@ iframe{
             height: 0px;
             width:0px;
         }
-    
+    /* activities styles */
         .educational{
             display:flex;
             flex:wrap;
@@ -1017,23 +996,23 @@ iframe{
             display:flex;
             flex-wrap:nowrap;
         }
-    
-        #table{
-            display:grid;
-        }
         #carousel-museum{
             max-height: 55%;
             max-width:55%;
         }
-    
-        #map{
-            visibility: visible;
-        }
-
+    /* dining styles */
         #dining{
             display:flex;
             flex-wrap:nowrap;
         }
 
+        .specialityEats, .generalEats{
+            display:flex;
+            flex-wrap:nowrap;
+        }
+        .speciality, .general{
+            max-width: 35%;
+            max-height: 35%;
+        }
 
     }

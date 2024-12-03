@@ -63,11 +63,10 @@
                 <figcaption>Two 7 Studio: A Black-owned gallery for guided art classes and events.</figcaption>
             </figure>       
         </section>
-      
+        
         <h3>Educational Fun</h3>
-        <p>Activities for those interested in science and marine life. Fun for all ages!</p>
         <section class="educational">
-
+        <p>Activities for those interested in science and marine life. Fun for all ages!</p>
         <figcaption>Videos of some animals featured at the National Aquarium</figcaption> 
             <figure id="aquarium">
                 <video class="aquarium" width="360" height="280" controls muted>

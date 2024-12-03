@@ -47,7 +47,7 @@
                     <h3>Food for the vegetarian/vegan crowd!</h3>
                 </header>
           
-                <section  >
+                <section>
                 <figure class="specialityEats">
                     <img class="speciality" src="assets/images/RedEmma.jpg" alt="Photo of local vegan resturant/bookstore Red Emma's">
                     <figcaption>Red Emma's Bookstore Coffeehouse: 3128 Greenmount Ave, Baltimore,MD 21218</figcaption>

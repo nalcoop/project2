@@ -27,9 +27,8 @@
                     <source src="djpope.ogg" type="video/ogg">
                 </video>
             </div>
-            <figure>
-                <figcaption>DJ Pope performing at the Collective Minds: House Music Festival.</figcaption>
-            </figure>
+            <figcaption>DJ Pope performing at the Collective Minds: House Music Festival.</figcaption>
+        
         </article>
 
         <article class="newgen">
