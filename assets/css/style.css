@@ -5,11 +5,12 @@
 /* Make animations for banner header explore410 */
 /* floating text and wrap for pages without comments */
 /* apply general styles to all pages */ 
-.title{
+.header{
     position:relative;
     top:-20px;
     margin: 10px;
     padding:10px;
+    text-align: left;
 }
 
 body {
@@ -23,12 +24,18 @@ footer{
     margin-top:10px;
 }
 
-h1,h2,h3{
+h1,h2{
     font-family: "Oswald", sans-serif; 
     font-optical-sizing: auto;
     font-weight: 600;
     font-style:normal;
     text-align: center;
+}
+h3{
+    font-family: "Oswald", sans-serif; 
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style:normal;
 }
 
 
@@ -333,11 +340,7 @@ main{
     }
 
 
-    .canton,.harbor
-    {
-       padding: 8px 12px;
-       background-color: none;
-    }
+ 
   
 
     .menu>div{
@@ -405,7 +408,10 @@ main{
         display:flex;
         flex-wrap:wrap;
     }
-
+    .general, .speciality{
+        max-width: 30%;
+        max-height: 30%;
+    }
     li {
         font: 10px "Merriweather", serif;
         font-weight: 300px;
@@ -422,18 +428,6 @@ main{
         font-weight: 300px;
         text-decoration: none;
         color: black;
-    }
-
-
-
-    .ravens-img,
-    .orioles,
-    .graffiti,
-    .artsdistrict,
-    .fedhill-img,
-    .general, .speciality{
-        max-width: 25%;
-        max-height: 25%;
     }
 
     iframe{
@@ -519,8 +513,7 @@ main{
 
     .graffiti {
         display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
+        flex-wrap: wrap;
     }
 
 
@@ -616,18 +609,15 @@ p,a, li{
    font-size: 1.2rem;
 }
 
+/* dining styles */
 
-
-
-.ravens-img,
-.orioles,
-.graffiti,
-.artsdistrict,
-.fedhill-img,
 .general, .speciality{
-    max-width: 25%;
-    max-height: 25%;
+    max-width: 30%;
+    max-height: 30%;
 }
+
+
+
 .orioles,.ravens-img{
         display: flex;
         flex-wrap: wrap;
@@ -765,13 +755,7 @@ iframe{
         .ravens-img,
         .orioles,
         .artsdistrict,
-        .fedhill-img,
-        .BCC,
-        .western,
-        .FourSeasons,
-        .spb,
-        .ivyHotel,
-        .wharf {
+        .fedhill-img{
             max-width: 35%;
             max-height: 35%;
         }
@@ -853,10 +837,9 @@ iframe{
             font-size: 18px;
         }
     
-        .graffiti {
+        #graffiti {
             display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
+            flex-wrap: nowrap;
         }
     
         .home-grid {
@@ -986,7 +969,6 @@ iframe{
         .educational{
             display:flex;
             flex:wrap;
-            direction:row;
             gap:40px;
             padding: 10px 12px;
         }
@@ -997,10 +979,12 @@ iframe{
             gap:40px;
             padding: 10px 12px;
         }
-        #aquarium{
-            display:flex;
-            flex-wrap:nowrap;
-        }
+      .aquarium{
+        width:400px;
+        height:320px;
+        gap:20px;
+        padding-left:30px;
+      }
         #carousel-museum{
             max-height: 55%;
             max-width:55%;
@@ -1021,12 +1005,35 @@ iframe{
             gap:20px;
         }
         .speciality, .general{
-            max-width: 35%;
-            max-height: 35%;  
+            max-width: 60%;
+            max-height: 60%;  
         }
         #special{
             margin-top:20px;
         }
+        
+        /* Rest Area styles */
+        #rest{
+            display:flex;
+            flex-wrap: wrap;
+        }
+   
+        .spb,
+        .wharf {
+            max-width: 50%;
+            max-height: 50%;
+            gap:20px;
+        }
+        .FourSeasons, .ivyHotel{
+            max-width: 45%;
+            max-height:45%;
+        }
+        .spb:last-child{
+            max-width: 51%;
+            max-height:51%;
+        }
+
+        /* school page styles */
 
 
     }

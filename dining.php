@@ -3,11 +3,12 @@
 ?>
      <header>
             <h2>Delectable Dining</h2>
+         
     </header>
     <main id="dining">
         <article>   
-            <p>Pick from some of Baltimore's finest dining that will satisfy all audiences and dietary restrictions.</p>
-            
+         
+        <p> <hr>Pick from some of Baltimore's finest dining that will satisfy all audiences and dietary restrictions.</p>
                 <header>
                     <h3>Food to satisfy all people!</h3>
                 </header>
@@ -62,8 +63,9 @@
                     
                     <figure class="specialityEats">
                         <img class="speciality" src="assets/images/dodahKitchenBaltimore.jpg" alt="Photo of local vegan resturant Dodah's Kitchen Baltimore location.">
-                        <figcaption>Dodah's Kitchen:1210 North Charles St, Baltimore,MD 21201</figcaption>
-                        <figcaption>Dodah's Kitchen (second location): 3801 34th St, Mt. Rainer,MD 20712 </figcaption>
+                        <figcaption>Dodah's Kitchen:1210 North Charles St, Baltimore,MD 21201 <br>
+                        Dodah's Kitchen (second location): 3801 34th St, Mt. Rainer,MD 20712 
+                        </figcaption>
                     </figure> 
               
             </section>

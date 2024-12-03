@@ -3,7 +3,7 @@
 ?>
     
     <header>
-        <h2> Comfortable Sleeping</h2>
+        <h2> Quality Comfort</h2>
     </header>
 
     <main id="rest">
@@ -12,28 +12,36 @@
     
             <h3> <hr>Top five 4-5 star hotels in Baltimore</h3>
             
-            <figure>
+            <figure class="hotel">
                 <img class="ivyHotel" src="assets/images/Ivy-hotel-courtyard.jpg" alt="Photo of the Ivy Hotel's exterior courtyard.">
                 <img class="ivyHotel" src="assets/images/ivy-hotel-exterior-landscape.jpg" alt="Photo of the Ivy Hotel's exterior.">
-                <figcaption>The Ivy Hotel:205 E Biddle Street. 5 star, Ivy hotel a luxury boutique hotel decorated with beautiful, romantic style decour is full of amenties such as private spas, gyms, conference rooms and more.</figcaption>
-            </figure>
+                </figure>
+               <h3>The Ivy Hotel</h3> 
+               <figcaption>Located at 205 E Biddle Street. 5 star, Ivy hotel a luxury boutique hotel decorated with beautiful, romantic style decour is full of amenties such as private spas, gyms, conference rooms and more.</figcaption>
+            
     
-            <figure>
+            <figure class="hotel">
                 <img class="wharf" src="assets/images/wharf-closeup.jpg" alt="Photo of the Wharf's exterior close up to show sign.">
                 <img class="wharf" src="assets/images/wharf-hotel-exterior.jpg" alt="Photo of the Wharf's exterior with harbor view.">
-                <figcaption>Inn At Henderson's Wharf, Ascend Hotel Collection:1000 Fell Street. 4.5 star,The Inn at Henderson's Wharf is a secluded upscale hotel in the Fells Point area. With wonderful amenties, the Wharf is known for it's direct view of the Inner Harbor.  </figcaption>
-            </figure>
+                </figure>
+              <figcaption>
+              <h3>Inn At Henderson's Wharf, Ascend Hotel Collection </h3>  
+                Located at 1000 Fell Street. 4.5 star,The Inn at Henderson's Wharf is a secluded upscale hotel in the Fells Point area. With wonderful amenties, the Wharf is known for it's direct view of the Inner Harbor.  </figcaption>
+          
             
-            <figure>
+            <figure class="hotel">
                 <img class="spb" src="assets/images/spb-pool-waterview.jpg" alt="Photo of the Sagamore Pendry rooftop pool with harbor view.">
                 <img class="spb" src="assets/images/spb-exterior-waterview.jpg" alt="Photo of the Sagamore Pendry building with harbor view.">
-                <figcaption>Sagamore Pendry Baltimore:1715 Thames Street. 4.5 stars, the Sagamore Pendry is reimagined twist on Baltimore's historical past. With amenties such as a outdoor pool with harbor view, outdoor firepits, access to a gym and more,the Sagamore Pendry uses it's beauty to capture Baltimore's historic beauty. </figcaption>
-            </figure>
+                </figure>
+              <h3>Sagamore Pendry Baltimore</h3>  
+              <figcaption> Located at 1715 Thames Street. 4.5 stars, the Sagamore Pendry is reimagined twist on Baltimore's historical past. With amenties such as a outdoor pool with harbor view, outdoor firepits, access to a gym and more,the Sagamore Pendry uses it's beauty to capture Baltimore's historic beauty. </figcaption>
+           
     
-            <figure>
+            <figure class="hotel">
                 <img class="FourSeasons" src="assets/images/FourSeasons-pool-bargrill.jpg" alt="Photo of the Four Seasons pool, bar & grill.">
                 <img class="FourSeasons" src="assets/images/fourSeasons.jpg" alt="Photo of the Four Season's building.">
-                <figcaption>Four Seasons Hotel Baltimore:200 International Drive. 4.5 stars, the Four Seasons is luxurious romantic style hotel that's also very kid friendly. With amenties such as a rooftop pool, private spa, access to babysitting and more, the Four Seasons has everything to cater to all audiences. </figcaption>
+        </figure>
+                <h3>Four Seasons Hotel Baltimore </h3> <figcaption>Located at 200 International Drive. 4.5 stars, the Four Seasons is luxurious romantic style hotel that's also very kid friendly. With amenties such as a rooftop pool, private spa, access to babysitting and more, the Four Seasons has everything to cater to all audiences. </figcaption>
             </figure>
         </article>
     </main>
