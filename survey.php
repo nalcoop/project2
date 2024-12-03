@@ -2,6 +2,8 @@
 
     $title='TravelSurvey';
     include('./assets/inc/header.inc.php');
+    include('/home/MAIN/nic4340/connection.db.php');
+
 
     $sql= "SELECT `Name` `Message` FROM `Survey`";
     

@@ -1,11 +1,13 @@
 <?php
+  $title= 'Enjoy The Stay';
     include('./assets/inc/header.inc.php');
 ?>
 
     <main id="enjoyment">
         <!-- copy grid layout from index -->
         <div id="culture-structure">
-            <aside><strong>Select a section below to explore.</strong></aside>
+            <h3>Enjoy The Stay</h3>
+            <p><strong>Select a section below to explore.</strong></p>
             <div class="culture-grid">
                 <button class="section" type="button" onclick="window.location.href='activities.php'" value="Activities">Activities </button>
     

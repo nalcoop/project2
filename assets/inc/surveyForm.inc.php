@@ -1,4 +1,6 @@
-
+<?php  
+ include('/home/MAIN/nic4340/connection.db.php');
+?>
 
 
 <form action="submitSurvey.php" method="POST" class="blue">

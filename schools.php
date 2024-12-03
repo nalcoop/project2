@@ -1,5 +1,6 @@
 <?php
     include('./assets/inc/header.inc.php');
+
 ?>
     <header>
         <h2>Baltimore's Academics</h2>

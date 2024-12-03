@@ -1,10 +1,11 @@
 <?php
+  $title= 'Learning Content';
     include('./assets/inc/header.inc.php');
 ?>
-    <h2>Learning Content</h2>
+    <h3>Learning Content</h3>
     <main id="learning">
         <div id="learning-structure">
-            <aside><strong>Select a section below to explore.</strong></aside>
+            <p><strong>Select a section below to explore.</strong></p>
             <div class="learning-grid">
                 <button class="section" type="button" onclick="window.location.href='demographics.php'" value="Demographics">Demographics</button>
                 <button class="section" type="button" onclick="window.location.href='survey.php'" value="Location">Survey</button>

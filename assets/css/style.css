@@ -40,10 +40,11 @@ h3{
 
 
 figcaption,li,p,a {
-    font-family: 14px "Merriweather", serif;
+    font-family: "Merriweather", serif;
     font-weight: 400px;
     text-decoration: none;
     color: black;
+    font-size: 1rem;
 }
 
 
@@ -76,9 +77,10 @@ figcaption,li,p,a {
     max-width: 500px;
     background: #DBDBDB;
     padding: 30px 30px 20px 30px;
-    font:14px "Merriweather", serif;
+    font:"Merriweather", serif;
     color: #666;
     border-radius: 5px;
+    font-size: 1rem;
 }
 .blue h1 {
     padding: 20px 0px 20px 40px;
@@ -412,23 +414,7 @@ main{
         max-width: 30%;
         max-height: 30%;
     }
-    li {
-        font: 10px "Merriweather", serif;
-        font-weight: 300px;
-    }
-
-    figcaption,
-    p {
-        font: 12px "Merriweather", serif;
-        font-weight: 500px;
-    }
-
-    a {
-        font: 10px "Merriweather", serif;
-        font-weight: 300px;
-        text-decoration: none;
-        color: black;
-    }
+  
 
     iframe{
         width:400px;
@@ -481,34 +467,40 @@ main{
         height: 35%;
     }
 
-    #home-structure>aside {
+    #home-structure>p {
         display: flex;
-        flex-wrap: wrap;
-        font-size: 14px;
+        flex-wrap: nowrap;
+        font-size: 1rem;
+        text-align: center;
     }
 
-    #other-structure>aside {
+    #other-structure>p{
         display: flex;
-        flex-wrap: wrap;
-        font-size: 14px;
+        flex-wrap: nowrap;
+        font-size: 1rem;
+        text-align: center;
+
     }
 
-    #culture-structure>aside {
+    #culture-structure>p{
         display: flex;
-        flex-wrap: wrap;
-        font-size: 14px;
+        flex-wrap: nowrap;
+        font-size:1rem;
+        text-align: center;
     }
 
-    #enjoyment-structure>aside {
+    #enjoyment-structure>p {
         display: flex;
-        flex-wrap: wrap;
-        font-size: 14px;
+        flex-wrap: nowrap;
+        font-size: 1rem;
+        text-align: center;
     }
 
-    #learning-structure>aside {
+    #learning-structure>p {
         display: flex;
-        flex-wrap: wrap;
-        font-size: 14px;
+        flex-wrap: nowrap;
+        font-size: 1rem;
+        text-align: center;
     }
 
     .graffiti {
@@ -807,35 +799,6 @@ iframe{
             padding:10px;
         }
 
-        #home-structure>aside {
-            display: flex;
-            flex-wrap: wrap;
-            font-size: 18px;
-        }
-    
-        #other-structure>aside {
-            display: flex;
-            flex-wrap: wrap;
-            font-size: 18px;
-        }
-    
-        #culture-structure>aside {
-            display: flex;
-            flex-wrap: wrap;
-            font-size: 18px;
-        }
-    
-        #enjoyment-structure>aside {
-            display: flex;
-            flex-wrap: wrap;
-            font-size: 18px;
-        }
-    
-        #learning-structure>aside {
-            display: flex;
-            flex-wrap: wrap;
-            font-size: 18px;
-        }
     
         #graffiti {
             display: flex;
@@ -850,42 +813,16 @@ iframe{
             padding-top: 20px;
             justify-content: center;
         }
-    
-        #home,
-        #other,
-        #culture,
-        #learning,
-        #enjoyment {
-            padding: 20px;
-        }
-    
-        #culutre>h3 {
-            position: relative;
-            text-align: center;
-        }
-    
-        #enjoyment>h3 {
-            position: relative;
-            text-align: center;
-        }
-    
-        #other>h3 {
-            position: relative;
-            text-align: center;
-        }
-    
-        #home>h3 {
-            position: relative;
-            text-align: center;
-        }
+  
+   
     
         .section {
             background-color: #210B2C;
             color: #DBDBDB;
             padding: 25px;
-            height: 100px;
-            width: 150px;
-            font-size: 16px;
+            height: 150px;
+            width: 200px;
+            font-size: 1.4rem;
             border: 1px solid #210B2C;
             text-align: center;
         }
@@ -898,7 +835,6 @@ iframe{
         .learning-grid,
         .other-grid {
             display: grid;
-            grid-template-areas: "dropdown" "dropdown";
             grid-gap: 50px;
             grid-template-columns: auto auto;
             padding-top: 20px;
@@ -907,43 +843,17 @@ iframe{
         }
     
         .culture-grid {
-            display: grid;
-            grid-template-areas: "dropdown" "dropdown" "dropdown";
-            grid-gap: 50px;
-            grid-template-columns: auto auto auto;
-            padding-top: 20px;
-            margin-top: 40px;
-            justify-content: center;
+                display: grid;
+                grid-template-areas: "dropdown"
+                    "dropdown";
+                grid-gap: 40px;
+                grid-template-columns: auto auto;
         }
         #music {
             row-gap: 20px;
             justify-content: space-evenly;
         }
     
-
-    
-        .fedhill,
-        .twoStudio,
-        .aquarium, .poly{
-            width: 320px;
-            height: 240px;
-        }
-      
-    
-        .fedhill{
-            padding-left:20px;
-        }
-    
-
-    
-        .fedhill-img,
-        .druidhill,
-        .cylburnArborteum,
-        .canton ,.harbor,.demographics,.graffiti{
-            width:30%;
-            height:30%;
-            padding-left:20px;
-        }
     
         #graffiti{
             display:flex;
@@ -951,35 +861,27 @@ iframe{
             flex-direction: row;
         }
     
-        .poly-img, .BCC, .western,.BSA,.bard{
-            max-width: 40%;
-            max-height: 40%;
-        }
-        
-        .poly-img{
-            width:45%;
-            height:45%;
-        }
+       
         .jay-mobile{
             visibility: collapse;
             height: 0px;
             width:0px;
         }
     /* activities styles */
-        .educational{
+        .educational,.twoStudio{
             display:flex;
             flex:wrap;
             gap:40px;
-            padding: 10px 12px;
+            justify-content: center;
+            padding-left:30px;
+            margin-left:30px;
         }
         .educational2{
             display:flex;
             flex:wrap;
-            direction:row;
             gap:40px;
-            padding: 10px 12px;
         }
-      .aquarium{
+      .aquarium, .twoStudio{
         width:400px;
         height:320px;
         gap:20px;
@@ -1035,5 +937,17 @@ iframe{
 
         /* school page styles */
 
-
+        .poly-img, .BCC, .western,.BSA,.bard{
+            max-width: 40%;
+            max-height: 40%;
+        }
+        
+        .poly-img{
+            width:45%;
+            height:45%;
+        }
+        .poly{
+            width:400px;
+            height:320px;
+        }
     }

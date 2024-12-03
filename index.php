@@ -1,17 +1,16 @@
 <?php
-    $title= 'Index';
-    require_once("./assets/inc/header.inc.php");
+    $title= 'Home';
+    include("./assets/inc/header.inc.php");
 ?>
 
     <main id="home">
-        <article>
-            <p>Welcome to Baltimore City, the greatest city in America. I will take you on a tour through the eyes of a
-                native, someone who was born and raised in the heart of the city.</p>
-            <p>Leave all judgment and preconceived notions at the door; enjoy the tour.</p>
-        </article>
+        <section>
+            <p>Welcome to Baltimore City, Charm City, the greatest city in America! Take a tour and explore Baltimore through the lens of a native. Enjoy the experience.</p>
+           
+</section>
         <h3>Content Sections</h3>
         <div id="home-structure">
-            <aside><strong>Select a section below to begin your adventure</strong></aside>
+            <p><strong>Select a section below to begin your adventure</strong></p>
             <div class="home-grid">
                 <button class="section" type="button" onclick="window.location.href='enjoyment.php'">How To Enjoy Your
                     Stay</button>

@@ -2,6 +2,7 @@
     $title="Submit Survey";
 
     require_once("assets/inc/header.inc.php");
+    include('/home/MAIN/nic4340/connection.db.php');
 
     if($mysqli -> connect_errno){
     echo "Failed to connect to MySQL: " . $mysqli -> connect_error;

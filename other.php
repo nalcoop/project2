@@ -1,4 +1,5 @@
 <?php
+  $title= 'Other Content';
     include('./assets/inc/header.inc.php');
 ?>
     <h1>Other</h1>

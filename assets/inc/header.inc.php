@@ -1,5 +1,4 @@
 <?php
-    include('/home/MAIN/nic4340/connection.db.php');
     require_once('assets/inc/tools.inc.php');
     require_once('assets/inc/validation.inc.php');
 ?>
@@ -48,7 +47,7 @@
         
         <div class="secondLayer">
             <button class="layeredButton" type="button" onclick="window.location.href='enjoyment.php'">
-                How To Enjoy Your Stay <i class="fa fa-caret-down"></i>
+                Enjoy The Stay <i class="fa fa-caret-down"></i>
             </button>
             <div class="layerContent">
                 <a href="activities.php">Activities</a>
@@ -59,7 +58,7 @@
         
         <div class="secondLayer">
             <button class="layeredButton" type="button" onclick="window.location.href='culture.php'">
-                Embracing The True Baltimore <i class="fa fa-caret-down"></i>
+                Embracing Baltimore <i class="fa fa-caret-down"></i>
             </button>
             <div class="layerContent">
                 <a href="schools.php">Academics</a>
@@ -74,7 +73,7 @@
                 Learning Content <i class="fa fa-caret-down"></i>
             </button>
             <div class="layerContent">
-                <a href="demographics.php">Learning-Demographic</a>
+                <a href="demographics.php">Demographic</a>
                 <a href="survey.php">Survey</a>
             </div>
         </div>
