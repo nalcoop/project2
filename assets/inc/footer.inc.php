@@ -18,7 +18,6 @@
    <a href="other.php">14</a> 
    <a href="grading.php">15</a>
    <a href="references.php">16</a>
-
   <a href="#">&raquo;</a>
 </div>
 

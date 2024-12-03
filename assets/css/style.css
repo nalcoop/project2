@@ -51,14 +51,6 @@ strong{
     text-align: center;
 }
 
-#music,#art, #home, #school, #sports, #references {
-    display: flex;
-    flex-wrap: wrap;   
-}
-#dining{
-    display:flex;
-    flex-wrap:nowrap;
-}
 
 
 .section {
@@ -239,6 +231,7 @@ legend{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-family: "Merriweather", serif;
     
 }
 
@@ -268,8 +261,8 @@ legend{
 
 .layeredNav a:hover,
 .secondLayer:hover .layeredButton {
-    background-color: #5E6572;
-    color: #fff; /* Optional: Change text color on hover */
+    color: #01143c; 
+    background-color: #FBFBFB;/* Optional: Change text color on hover */
 }
 
 .layerContent {
@@ -301,7 +294,8 @@ main{
     position: relative;
     bottom:-40px;
 }
-.pagiantion{
+.pagination{
+    text-align: center;
     justify-content: center;
 }
 .pagiantion a{
@@ -320,6 +314,93 @@ main{
 .pagiantion a:hover:not(.active){
     background-color:#666;
 }
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    
+        /* popup code */
+        .popup{
+            position:relative;
+            display: inline-block;
+            cursor:pointer;
+        }
+
+        .popup .popuptext{
+            visibility: hidden;
+            width:160px;
+            background-color:#FEF8F4 ;
+            color:#210B2C;
+            text-align: center;
+            border-radius:6px;
+            padding: 8px 0;
+            position:absolute;
+            z-index:1;
+            bottom:125%;
+            left:50%;
+            margin-left: -80px;
+        }
+
+        .popup .popuptext::after{
+            content:"";
+            position:absolute;
+            top:100%;
+            left:50%;
+            margin-left:-5px;
+            border-width:5px;
+            border-style:solid;
+            border-color:#0e0069 transparent transparent transparent;
+        }
+
+        .popup .show{
+            visibility: visible;
+            -webkit-animation: fadeIn  1s;
+            animation: fadeIn 1s;
+        }
+
+        @-webkit-keyframes fadeIn{
+            from{opacity:0;}
+            to {opacity:1;}
+        }
+
+        @keyframes fadeIn{
+            from{opacity:0;}
+            to{opacity:1;}
+        }
+
+        
+    #home-structure>p {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #other-structure>p{
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+
+
+    #enjoyment-structure>p {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #learning-structure>p {
+        display: flex;
+        flex-wrap: nowrap;
+        font-size: 1rem;
+        text-align: center;
+    }
 
 @media only screen and (max-width:600px) {
     
@@ -352,10 +433,6 @@ main{
         padding: 14px 18px;
         gap:50px;
     }
-
-
- 
-  
 
     .menu>div{
         width:35px;
@@ -429,16 +506,14 @@ main{
   
 
     iframe{
-        width:400px;
-        height:250px;
+        width:300px;
+        height:240px;
     }
 
     .jay {
         max-width: 75%;
         max-height: 75%;
     }
-
-    /* make hamburger menu ASAP  */
 
     .home-grid {
         display: grid;
@@ -475,36 +550,6 @@ main{
         height: 35%;
     }
 
-    #home-structure>p {
-        display: flex;
-        flex-wrap: nowrap;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    #other-structure>p{
-        display: flex;
-        flex-wrap: nowrap;
-        font-size: 1rem;
-        text-align: center;
-
-    }
-
-
-
-    #enjoyment-structure>p {
-        display: flex;
-        flex-wrap: nowrap;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    #learning-structure>p {
-        display: flex;
-        flex-wrap: nowrap;
-        font-size: 1rem;
-        text-align: center;
-    }
 
     .graffiti {
         display: flex;
@@ -620,8 +665,6 @@ p,a, li{
 }
 
 
-/* make hamburger menu ASAP  */
-
 .home-grid {
     display: grid;
     grid-template-areas: "dropdown"
@@ -733,7 +776,7 @@ iframe{
         }
      
         h1,h2,h3, figcaption,li,p{
-            font-size: 1.6rem;
+            font-size: 1.4rem;
         }
         
         a {
@@ -741,7 +784,7 @@ iframe{
             text-decoration: none;
             color: black;
         }
-            
+            /*landing pages styles  */
         #home,
         #enjoyment,
         #other,
@@ -750,62 +793,7 @@ iframe{
             display: flex;
             flex-direction: column;
         }
-    
 
-        
-        /* music styles */
-
-        .jay-mobile{
-            display: none;
-        }
-        .jay {
-            max-width: 75%;
-            max-height: 75%;
-        }
-        
-        #djpope {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;
-            gap:40px;
-        }
-      
-        .djpope-img {
-            max-width: 76%;
-            max-height: 76%;
-        }
-    
-        .jay-img {
-            max-width: 75%;
-            max-height:75%;
-        }
-    
-        .newgen{
-           display:flex;
-           flex-direction: column;
-           flex-wrap: wrap;
-        }
-        #newgen{
-            bottom: 0px;
-            margin: 0px;
-            padding:10px;
-            gap:10px;
-            height:300px;
-        }
-
-        #popularSound{
-            display:flex;
-            flex-wrap:wrap;
-            margin:10px;
-            padding:10px;
-        }
-
-    
-        #graffiti {
-            display: flex;
-            flex-wrap: nowrap;
-        }
-    
         .home-grid {
             display: grid;
             grid-template-areas: "dropdown" "dropdown";
@@ -857,24 +845,69 @@ iframe{
                 grid-template-columns: auto auto;
                 justify-content: center;
         }
+      
+    
+    
+          
+        /* music styles */
         #music {
             row-gap: 20px;
             justify-content: space-evenly;
         }
-    
-    
-        #graffiti{
-            display:flex;
-            flex-wrap: wrap;
+
+        .jay-mobile{
+            display: none;
+        }
+        .jay {
+            max-width: 75%;
+            max-height: 75%;
+        }
+        
+        #djpope {
+            display: flex;
             flex-direction: row;
+            flex-wrap: nowrap;
+            gap:40px;
+        }
+      
+        .djpope-img {
+            max-width: 76%;
+            max-height: 76%;
         }
     
-       
+        .jay-img {
+            max-width: 75%;
+            max-height:75%;
+        }
+    
+        .newgen{
+           display:flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+        }
+        #newgen{
+            bottom: 0px;
+            margin: 0px;
+            padding:10px;
+            gap:10px;
+            height:300px;
+        }
+
+        #popularSound{
+            display:flex;
+            flex-wrap:wrap;
+            margin:10px;
+            padding:10px;
+        }
+               
         .jay-mobile{
             visibility: collapse;
             height: 0px;
             width:0px;
         }
+
+    
+
     /* activities styles */
         .educational{
             display:flex;
@@ -988,54 +1021,14 @@ iframe{
             max-height:450%;
             gap:20px;
         }
-        /* popup code */
-        .popup{
-            position:relative;
-            display: inline-block;
-            cursor:pointer;
+        #graffiti{
+            display:flex;
+            flex-wrap: wrap;
+            flex-direction: row;
         }
+        
+  
 
-        .popup .popuptext{
-            visibility: hidden;
-            width:160px;
-            background-color:#FEF8F4 ;
-            color:#210B2C;
-            text-align: center;
-            border-radius:6px;
-            padding: 8px 0;
-            position:absolute;
-            z-index:1000;
-            bottom:125%;
-            left:50%;
-            margin-left: -80px;
-        }
-
-        .popup .popuptext::after{
-            content:"";
-            position:absolute;
-            top:100%;
-            left:50%;
-            margin-left:-5px;
-            border-width:5px;
-            border-style:solid;
-            border-color:#0e0069 transparent transparent transparent;
-        }
-
-        .popup .show{
-            visibility: visible;
-            -webkit-animation: fadeIn  1s;
-            animation: fadeIn 1s;
-        }
-
-        @-webkit-keyframes fadeIn{
-            from{opacity:0;}
-            to {opacity:1;}
-        }
-
-        @keyframes fadeIn{
-            from{opacity:0;}
-            to{opacity:1;}
-        }
 
 
     }
