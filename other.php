@@ -2,7 +2,7 @@
   $title= 'Other Content';
     include('./assets/inc/header.inc.php');
 ?>
-    <h1>Other</h1>
+    <h3>Other</h3>
     <main id="other">
         <!-- copy grid layout from index -->
         <div id="other-structure">

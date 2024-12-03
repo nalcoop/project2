@@ -1,6 +1,6 @@
 <?php
   $title= 'Embracing Baltimore';
-    include('./assets/inc/header.inc.php');
+  include('./assets/inc/header.inc.php');
 ?>
 
     <main id="culture">

@@ -23,7 +23,11 @@ footer{
     padding-top:10px;
     margin-top:10px;
     display:flex;
-    flex-wrap:wrap;
+    flex-wrap:nowrap;
+    gap:40px;
+}
+footer>a{
+    padding-top:20px;
 }
 
 h1,h2{
@@ -223,10 +227,10 @@ legend{
 .layeredNav {
     overflow: hidden;
     background-color: #FEF8F4;
-    font-family: "Merriweather", serif;
+    display: none;
 }
 
-.layeredNav a {
+.layeredNav>a {
     float: left;
     font-size: 1rem;
     color: #210B2C;
@@ -240,6 +244,8 @@ legend{
 .secondLayer {
     float: left;
     overflow:hidden; 
+    font-family: "Merriweather", serif;
+
    /* Required for dropdown positioning */
 }
 
@@ -297,13 +303,16 @@ main{
     bottom:-40px;
 }
 .pagination{
+    margin-top: 20px;
+    padding-top:40px;
     text-align: center;
     justify-content: center;
 }
 .pagiantion a{
+    margin-top: 20px;
     color:#210B2C;
     justify-content: center;
-    padding:8px 16px;
+    padding:16px 16px;
     text-decoration: none;
     transition: #FEF8F4 .3s;
     border:1px solid #555;
@@ -324,6 +333,7 @@ main{
             display: inline-block;
             cursor:pointer;
             font-size:1.2rem;
+            padding-top:20px;
         }
 
         .popup .popuptext{
@@ -371,37 +381,14 @@ main{
         }
 
         
-    #home-structure>p {
-        display: flex;
-        flex-wrap: nowrap;
-        font-size: 1rem;
-        text-align: center;
-    }
 
-    #other-structure>p{
-        display: flex;
-        flex-wrap: nowrap;
-        font-size: 1rem;
-        text-align: center;
-
-    }
-
-    #enjoyment-structure>p {
-        display: flex;
-        flex-wrap: nowrap;
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    #learning-structure>p {
-        display: flex;
-        flex-wrap: nowrap;
-        font-size: 1rem;
-        text-align: center;
-    }
 
 @media only screen and (max-width:600px) {
-    
+
+
+    .layeredNav{
+        display: none;
+    }    
     #hamburger{
         background: none;
         position: absolute;
@@ -421,8 +408,8 @@ main{
         width:100%;
         height:60px;
         line-height:60px;
-        border-bottom:1px solid FEF8F4;
-        background-color: FEF8F4;
+        border-bottom:1px solid #FEF8F4;
+        background-color: #FEF8F4;
     }
     #index{
         display: flex;
@@ -441,11 +428,16 @@ main{
     p {
         text-align: left;
     }
+    strong{
+        text-align: center;
+    }
+    
 
     /* music page styles */
     #djpope {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
+        flex-wrap:wrap;
         gap:40px;
     }
 
@@ -453,6 +445,9 @@ main{
         width: 320px;
         height: 240px;
         padding-left:10px;
+    }
+    .jay-mobile{
+        visibility: visible;
     }
 
     .djpope-img,
@@ -498,8 +493,8 @@ main{
         flex-wrap:wrap;
     }
     .general, .speciality{
-        max-width: 30%;
-        max-height: 30%;
+        max-width: 40%;
+        max-height: 40%;
     }
   
 
@@ -513,12 +508,12 @@ main{
         max-height: 75%;
     }
 
+    /* landing pages style */
     .home-grid {
         display: grid;
-        grid-template-areas: "dropdown"
-            "dropdown";
         grid-gap: 40px;
-        grid-template-columns: auto auto;
+        grid-template-columns:auto;
+        justify-content: center;
     }
 
     .section {
@@ -529,13 +524,23 @@ main{
         border: 1px solid #210B2C;
     }
 
-    #home,
-    #enjoyment,
-    #other,
-    #culture,
-    #learning {
-        display: flex;
-        flex-direction: column;
+      
+    .learning-grid,
+    .other-grid {
+        display: grid;
+        grid-gap: 50px;
+        grid-template-rows: auto auto;
+        padding-top: 20px;
+        margin-top: 20px;
+        justify-content: center;
+    }
+
+    .culture-grid {
+            display: grid;
+            grid-gap: 40px;
+            grid-template-columns: auto;
+            justify-content: center;
+
     }
 
  
@@ -555,23 +560,13 @@ main{
     }
 
 
-
-    .fedhill{
-        width:340px;
-        height:280px;
-    }
-
-
     .twoStudio,
     .aquarium, .poly{
         width: 320px;
         height: 240px;
     }
 
-    .fedhill-img,
-    .druidhill,
-    .cylburnArborteum,
-    .canton, .harbor, .BCC, .western,.BSA,.bard, .poly-img,.demographics{
+    .BCC, .western,.BSA,.bard, .poly-img,.demographics{
         width: 50%;
         height: 50%;
         padding-left: 20px;
@@ -580,8 +575,7 @@ main{
     .ravens-img,
     .orioles,
     .artsdistrict,
-    .fedhill-img,
-    .djpope-img .BCC,
+    .djpope-img, .BCC,
     .western,
     .FourSeasons,
     .spb,
@@ -607,8 +601,52 @@ main{
 
 }
 
-@media only screen and (max-width:800px) { 
+@media only screen and (max-width:1179px) { 
+    h1,h2,h3{
+        font-size: 1.4rem;
+    }
 
+    /* footer code */
+    .pagination{
+        margin-top: 20px;
+        padding-top:40px;
+        text-align: center;
+        justify-content: center;
+    }
+    .pagiantion a{
+        margin-top: 20px;
+        color:#210B2C;
+        justify-content: center;
+        padding:16px 16px;
+        text-decoration: none;
+        transition: #FEF8F4 .3s;
+        border:1px solid #555;
+    }
+    
+    .pagiantion a.active{
+        background-color: #0e0069;
+        color:#FEF8F4;
+    }
+    
+    .pagiantion a:hover:not(.active){
+        background-color:#666;
+    }
+    
+    footer{
+        padding-top:10px;
+        margin-top:10px;
+        display:flex;
+        flex-wrap:nowrap;
+        gap:40px;
+    }
+    footer>a{
+        padding-top:20px;
+    }
+
+    strong{
+        text-align: center;
+    }
+    
 .menu>div{
     width:35px;
     height:5px;
@@ -616,11 +654,12 @@ main{
     margin:6px 0;
 }
 p {
+    font-size:1.2rem;
     text-align: left;
 }
 /* music styles */
 .jay-mobile{
-    display: none;
+    visibility: visible;
 }
 .jay {
     max-width: 75%;
@@ -644,14 +683,40 @@ p {
 }
 figcaption,
 p,a, li{
-   font-size: 1.2rem;
+   font-size: 1.4rem;
+}
+
+.learning-grid,
+.other-grid {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-rows: auto auto;
+    padding-top: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.culture-grid {
+        display: grid;
+        grid-gap: 40px;
+        grid-template-columns: auto;
+        justify-content: center;
+
+}
+.enjoyment-grid {
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: auto;
+    justify-content: center;
+    font-size:1.4rem;
+
 }
 
 /* dining styles */
 
 .general, .speciality{
-    max-width: 30%;
-    max-height: 30%;
+    max-width: 45%;
+    max-height: 45%;
 }
 
 
@@ -765,12 +830,38 @@ iframe{
     gap:40px;
     padding: 10px 12px;
 }
+.secondLayer {
+    float: left;
+    overflow:hidden; 
+    font-family: "Merriweather", serif;
+
+   /* Required for dropdown positioning */
+}
 }
 
 
 @media only screen and (min-width:1180px) {
+    .blue{
+        max-width: 700px;
+
+    }
+    .secondLayer {
+      
+        overflow:hidden; 
+        font-family: "Merriweather", serif;
+        display: inline-block;
+    
+       /* Required for dropdown positioning */
+    }
+    strong{
+        text-align: center;
+    }
+    
         #hamburger{
             visibility: hidden;
+        }
+        .layeredNav{
+            display: block;
         }
      
         h1,h2,h3, figcaption,li,p{
@@ -790,6 +881,7 @@ iframe{
         #learning {
             display: flex;
             flex-direction: column;
+            
         }
 
         .home-grid {
@@ -931,7 +1023,7 @@ iframe{
         }
         #twoStudio{
             display:flex;
-            flex-wrap:wrap;
+            flex-wrap:nowrap;
             gap:40px;
             justify-content: center;
             padding-left:30px;
