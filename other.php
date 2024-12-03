@@ -6,7 +6,7 @@
     <main id="other">
         <!-- copy grid layout from index -->
         <div id="other-structure">
-            <aside><strong>Select a section below to explore.</strong></aside>
+            <p><strong>Select a section below to explore.</strong></p>
             <div class="other-grid">
                 <button class="section" type="button" onclick="window.location.href='grading.php'"
                     value="Grading">Grading</button>
@@ -18,5 +18,6 @@
     </main>
 
     <?php
+     include('./assets/inc/pagination.inc.php');
     include('./assets/inc/footer.inc.php');
 ?>

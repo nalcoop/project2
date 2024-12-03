@@ -19,6 +19,6 @@
 <hr>
 
 <?php
-
+ include('./assets/inc/pagination.inc.php');
     require_once("assets/inc/footer.inc.php");
 ?>

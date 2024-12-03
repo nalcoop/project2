@@ -19,5 +19,6 @@
     </main>
     
 <?php
+ include('./assets/inc/pagination.inc.php');
     include('./assets/inc/footer.inc.php');
 ?>
