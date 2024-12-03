@@ -13,7 +13,7 @@
   <a href="music.php">9</a>
   <a href="sports.php">10</a>
   <a href="learning.php">11</a>
-  <a href="demographics.php">12/a>
+  <a href="demographics.php">12</a>
   <a href="survey.php">13</a>
    <a href="other.php">14</a> 
    <a href="grading.php">15</a>

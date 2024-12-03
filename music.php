@@ -49,6 +49,10 @@
                 <figcaption>DJ Jay performing at a local hookah longe.</figcaption>
         
             </div>
+            <div class="popup" onclick="popUp()"> Click for an interesting fact!
+                    <!-- Putting this in a popup so this may have to change from an aside -->
+                    <span class="popuptext" id="myPopup">Dj Pope, Jay the DJ and I, lived in the same neighborhood for most of my childhood. Those two are lifelong friends of my family and I.</span>
+                </div>
               
         </article>
 

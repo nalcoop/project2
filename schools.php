@@ -48,14 +48,14 @@
                         with 31 credits will be able to receive three diplomas.</p>
                     </figcaption>
                 </figure>
-                <aside>
+                <div class="popup" onclick="popUp()"> Click for an interesting fact!
                     <!-- Putting this in a popup so this may have to change from an aside -->
-                    <p>The top two Baltimore City Public Schools, Baltimore Polytechnic Institute and Baltimore City
+                    <span class="popuptext" id="myPopup">The top two Baltimore City Public Schools, Baltimore Polytechnic Institute and Baltimore City
                         College
                         have had the longest highschool football rivalry in Maryland history, and the second longest US
                         history.
-                        Beginning in 1889, the two schools have met up 134 times.</p>
-                </aside>
+                        Beginning in 1889, the two schools have met up 134 times.</span>
+                </div>
                 <figure>
                     <img class="BSA" src="assets/images/bsa.jpg" alt="Photo of the BSA's building.">
                     <figcaption>

@@ -301,10 +301,12 @@ main{
     position: relative;
     bottom:-40px;
 }
-
+.pagiantion{
+    justify-content: center;
+}
 .pagiantion a{
     color:#210B2C;
-    float:left;
+    justify-content: center;
     padding:8px 16px;
     text-decoration: none;
     transition: #FEF8F4 .3s;
@@ -980,7 +982,60 @@ iframe{
             flex-wrap:wrap;
             gap:40px;
         }
+        /* arts page styles */
+        .graffiti, .artsdistrict{
+            max-width:45%;
+            max-height:450%;
+            gap:20px;
+        }
+        /* popup code */
+        .popup{
+            position:relative;
+            display: inline-block;
+            cursor:pointer;
+        }
 
+        .popup .popuptext{
+            visibility: hidden;
+            width:160px;
+            background-color:#FEF8F4 ;
+            color:#210B2C;
+            text-align: center;
+            border-radius:6px;
+            padding: 8px 0;
+            position:absolute;
+            z-index:1000;
+            bottom:125%;
+            left:50%;
+            margin-left: -80px;
+        }
+
+        .popup .popuptext::after{
+            content:"";
+            position:absolute;
+            top:100%;
+            left:50%;
+            margin-left:-5px;
+            border-width:5px;
+            border-style:solid;
+            border-color:#0e0069 transparent transparent transparent;
+        }
+
+        .popup .show{
+            visibility: visible;
+            -webkit-animation: fadeIn  1s;
+            animation: fadeIn 1s;
+        }
+
+        @-webkit-keyframes fadeIn{
+            from{opacity:0;}
+            to {opacity:1;}
+        }
+
+        @keyframes fadeIn{
+            from{opacity:0;}
+            to{opacity:1;}
+        }
 
 
     }
