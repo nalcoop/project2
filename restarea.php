@@ -1,4 +1,5 @@
 <?php
+$title= 'Rest Area';
     include('./assets/inc/header.inc.php');
 ?>
     

@@ -1,5 +1,7 @@
 <?php
+$title= 'Art';
     include('./assets/inc/header.inc.php');
+
 ?>
 
 

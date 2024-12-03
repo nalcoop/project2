@@ -1,4 +1,5 @@
 <?php
+$title= 'References';
     include('./assets/inc/header.inc.php');
 ?>
 <header>

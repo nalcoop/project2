@@ -1,4 +1,5 @@
 <?php
+$title= 'Dining';
     include('./assets/inc/header.inc.php');
 ?>
      <header>

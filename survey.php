@@ -1,6 +1,6 @@
 <?php
 
-    $title='TravelSurvey';
+    $title='Travel Survey';
     include('./assets/inc/header.inc.php');
     include('/home/MAIN/nic4340/connection.db.php');
 

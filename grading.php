@@ -1,4 +1,5 @@
 <?php
+$title= 'Grading';
     include('./assets/inc/header.inc.php');
 ?>
 

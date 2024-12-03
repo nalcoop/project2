@@ -1,4 +1,5 @@
 <?php
+$title= 'Activities';
     include('./assets/inc/header.inc.php');
 ?>
 <h2>How To Stay Busy</h2>
@@ -49,16 +50,6 @@
         <!-- Possibly google map pins -->
         <section> 
             <figure>
-            <h3>Amazing Glaze</h3>
-                <!-- find images for this section -->
-                <figcaption>Located at 1340 Smith Ave. A creative space for pottery and canvas painting for all ages.<figcaption>
-            </figure>
-           
-            <figure>
-            <h3>McFadden Art Glass</h3>
-                <figcaption>Located at 6802 Eastern Ave. Offers hands-on learning for all ages.</figcaption>
-            </figure>
-
             <figure id="twoStudio">
             
                 <video class="twoStudio" width="400" height="320" controls muted>
@@ -115,20 +106,7 @@
             </figure>
         </section>
 
-        <!-- <h3>Scenic Areas</h3>
-        <section>
-            <p>Relax at beautiful waterfronts or stroll through parks, many of which have amenities for kids.</p>
-            
-       
-            <figure> 
-                <img class="canton" src="assets/images/canton.jpg" alt="Canton Waterfront Park at sunset">
-                <img class="canton" src="assets/images/cantonWater.jpg" alt="Canton Waterfront Park walkway">
-                <figcaption>Canton Waterfront Park: Located within downtown Baltimore, featuring shops and restaurants.</figcaption>
-            </figure>
 
-   
-
-        </section> -->
     </article>  
 <?php
   include('./assets/inc/pagination.inc.php');

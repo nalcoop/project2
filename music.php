@@ -1,4 +1,5 @@
 <?php
+$title= 'Music';
     include('./assets/inc/header.inc.php');
 ?>
     <main id="music">

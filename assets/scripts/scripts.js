@@ -76,6 +76,7 @@ function updateCaptions(carouselId,slideIndex){
   const carousel= document.getElementById(carouselId);
   const captions= carousel.querySelectorAll(".caption");
 
+
   captions.forEach((caption,index)=>{
   if(index=== slideIndex){
     caption.style.display="block";
@@ -93,32 +94,7 @@ function popUp(){
 
 
 
-//google maps w json pins attempts
-//add API key so functional
-// let map;
-// async function initMap(){
 
-
-//   const {Map} = await google.maps.importLibrary("maps");
-//   const {AdvancedMarkerElement} = await google.maps.importLibrary("marker");
-//   const baltimore={lat:39.29144, lng: -76.61493};
-//   const map= new google.maps.Map(document.getElementById("map"), {
-//     zoom:4,
-//     center: baltimore,
-//     mapId: "BALTIMORE"
-//   });
-
-//   const rfl=new AdvancedMarkerElement({ map, position: {lat:39.28748, lng:-76.60384}, });
-//   const bma=({ map, position:{lat:39.32616, lng:-76.61934},});
-//   const wam=({map, position: {lat:39.29642, lng:-76.61649},});
-//   const bwm=({map, position: {lat:39.31176, lng:-76.59682},});
-//   const nataq=({map, position: {lat:39.28539, lng:-76.60839},});
-//   const msc=({map, position:{lat:39.28141, lng:-76.61191},});
-//   const amzglz=({map, position:{lat:39.36841, lng:-76.65038},});
-//   const mcfglass=({map, position:{lat:39.2883, lng:-76.53112},});
-//   const twosev=({map, position:{lat:39.31067, lng:-76.61751},});
-// }
-// initMap();
 
 
 

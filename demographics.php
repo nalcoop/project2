@@ -1,4 +1,5 @@
 <?php
+$title= 'Demographics';
     include('./assets/inc/header.inc.php');
 ?>
 <!-- Extras: Update my google map to have about 5-7 revelant pins from my site -->

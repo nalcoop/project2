@@ -1,4 +1,5 @@
 <?php
+$title= 'Sports';
     include('./assets/inc/header.inc.php');
 ?>
     <main id="sports">

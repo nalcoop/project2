@@ -1,4 +1,5 @@
 <?php
+$title= 'Academics';
     include('./assets/inc/header.inc.php');
 
 ?>
