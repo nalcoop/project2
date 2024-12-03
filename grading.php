@@ -3,49 +3,13 @@
 ?>
 
     <main>
+        <h2>Grading Portion</h2>
         <article>
-            <h3>Design and Quality of Content</h3>
-            <section>
-                <ul>
-                    <li>Good Design Techniques - CRAP: 4 - Not very visually appealing; however, it does follow basic CRAP design techniques.</li>
-                    <li>Organization of Information: 6 - Every section has a collection of images and videos to correspond with the location, with a caption to follow.</li>
-                    <li>Content: 6 - Content is centered around the focus of the section header, then follows a trend of making sure that all summaries follow a generally similar outline.</li>
-                </ul>
-            </section>
-
-            <h3>Quality of Content</h3>
-            <section>
-                <ul>
-                    <li>10 Content Pages: 11 - At least 10 content pages, 6-8 full of sufficient content according to the 250 words per page rule.</li>
-                </ul>
-            </section>
-
-            <h3>More Miscellaneous</h3>
-            <section>
-                <ul>
-                    <li>Code Design Requirements: 6 - At least 10 content pages, 6-8 full of sufficient content according to the 250 words per page rule. Proper tags used for the structure of the articles. Comments to describe functionality.</li>
-                    <li>Interaction Design and Navigation: 4 - Each page has specialized headers. Lacks footer navigation, and breadcrumbs will be included in future iterations.</li>
-                    <li>HTML & CSS Validation: 7 - All pages validate with minor stylist choices flagging concerns.</li>
-                    <li>Reference Page: 4 -Not very detailed, missing key points.</li>
-                    <li>Grading Page: 6 -Complete with explanations on each score..</li>
-                </ul>
-                
-            </section>
-
-            <h3>Responsive</h3>
-            <section>
-                <ul>
-                    <li>Responsive Web Design: 4 - Mobile and tablet users are considered. The page will redesign itself based on the media queries placed in it.</li>
-                </ul>
-            </section>
-
-            <h3>Score</h3>
-            <section>
-                <ul>
-                    <li></li>
-                </ul>
-            </section>
-
+          <p>After major improvements from project 1, this has become a functional site that users can interact with and leave a review after exploration. With code that validates across all pages and no error messages present, this travel site will allow users to feel immersed in the site. This site allows for users to read information without huge walls of text with an image to correlate with each experience present. Users can also view the location of the key parts of the site such as dining and activities to be able to properly plan out their excursion. 
+            <br>Some notable features to mention would be the inclusion of carousel images, hamburger menu to be inclusive to mobile users, a sublayer navigation that correlates with the landing pages for the sections and the fully functional survey form that allows user comment entry after answering a few questions. The inclusion of these features allow for users to better experience the site in a more funcitonal manner without taking up large amounts of space on the screen. It also allows for a cleaner UI to make functionality easier for users and to improve the overall aestheic of the site. Not to mention the improving the navigation menu to allow for breadcrumbs & pagination and a more functional menu that indicates to the user where they are at all times (also by ensuring that all pages are labeled with headers). Also icluded the footer throughout the page that allows for users to contact me with the click of a button.
+            <br> The survey form is used to engage with users beyond having them just enter in a comment. Users can click information to correlate to their experience through checkboxes and users can select which content section is their favorite for future inclusion of extra addiditions. The form also has features to ensure that the site will not be impacted by false information being entered through javascript validation and php validation functions.
+            <br> Some extras the site includes is the fully functional and expanisve survey form that allows for user entry beyond the required portion. Another extra would be the embedded map that allows for the pins of key parts of the site. A last extra that is included is the popup features utilized for interesting facts embedded in the site.
+          </p>
         </article>
     </main>
     

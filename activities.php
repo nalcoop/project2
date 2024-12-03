@@ -13,28 +13,28 @@
     <div class="carousel-img">   
         <div class="carousel-slide">
         <img class="museums active" src="assets/images/museum1.jpg" alt="Walters Art Museum exterior">
-                <figure id="walters" class="caption" >
+                <figure  class="caption" >
                 <h3>Walters Art Museum</h3>
                     <figcaption> Located at 600 N Charles St, Baltimore, MD 21201. Focused on diversity, inclusion, equity, and accessibility.</figcaption>
                 </figure>
         </div>
         <div class="carousel-slide">
             <img class="museums" src="assets/images/museum2.jpeg" alt="Baltimore Museum of Art exterior">
-                <figure id="bma" class="caption" >
+                <figure  class="caption" >
                 <h3>Baltimore Museum of Art</h3>
                     <figcaption> Located at 10 Art Museum Drive, Baltimore, MD 21218. A free local art museum on Johns Hopkins University Campus.</figcaption>
                 </figure>
         </div>
         <div class="carousel-slide">
             <img  class="museums" src="assets/images/museum3.jpeg" alt="Blacks in Wax exterior">
-                <figure id="blacksInWaxs" class="caption">
+                <figure  class="caption">
                 <h3>The National Great Blacks in Wax</h3>
                     <figcaption>Located at 1601-03 East North Ave, Baltimore, MD 21213. Learn about the history of Black people from slavery to historical Black figures thorugh the visuals of wax figures.</figcaption>
                 </figure>
         </div>
         <div class="carousel-slide">
             <img class="museums" src="assets/images/museum4.jpg" alt="Reginald F Lewis Museum exterior">
-                <figure id ="rfl" class="caption">
+                <figure class="caption">
                 <h3> Reginald F. Lewis Museum</h3>
                     <figcaption>Located at 830 E Pratt St, Baltimore, MD 21202. Highlights the history of African American Maryalnders.</figcaption>
                 </figure>

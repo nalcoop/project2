@@ -45,7 +45,9 @@ window.addEventListener("resize", function () {
 let currentSlides ={
     "carousel-aquarium":0,
     "carousel-science" :0,
-    "carousel-museum" :0
+    "carousel-museum" :0,
+    "carousel-ravens" :0,
+    "carousel-orioles" :0
 };
 
 function changeSlide(step, carouselId) {

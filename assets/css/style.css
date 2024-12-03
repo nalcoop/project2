@@ -302,6 +302,22 @@ main{
     bottom:-40px;
 }
 
+.pagiantion a{
+    color:#210B2C;
+    float:left;
+    padding:8px 16px;
+    text-decoration: none;
+    transition: #FEF8F4 .3s;
+}
+
+.pagiantion a.active{
+    background-color: #0e0069;
+    color:#FEF8F4;
+}
+
+.pagiantion a:hover:not(.active){
+    background-color:#666;
+}
 
 @media only screen and (max-width:600px) {
     
@@ -959,13 +975,12 @@ iframe{
         }
 
         /* sports page styles */
-        .oriolesStructure,.ravensStructure{
-            display: flex;
-            flex-wrap: nowrap;
+        .sports{
+            display:flex;
+            flex-wrap:wrap;
+            gap:40px;
         }
-        .ravens-img,
-        .orioles{
-            max-width: 35%;
-            max-height: 35%;
-        }
+
+
+
     }
