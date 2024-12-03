@@ -16,8 +16,7 @@
         </article>
         <section>
             <h3>Baltimore City Public Schools</h3>
-            <!-- image with text as the caption -->
-            <!-- Ideas to expand,css structure possible flex because its a simple smooth design implement java to make it a photo carousel under the article text -->
+           
             <ol>
                 <figure>
                     <video class="poly" width="400" height="320" alt="Video poly's aquaponics lab" controls muted>
@@ -28,7 +27,7 @@
                     <figcaption>
                       <h3><li>Baltimore Polytechnic Institute </li></h3> 
                    
-                       <p> Located at 1400 West ColdSpring Lane, Baltimore, Maryland,in the
+                       <p> Located at 1400 West ColdSpring Lane, Baltimore, Maryland,in 
                        northwest Baltimore.
                        Baltimore Polytechnic Institute, ranked number one in Baltimore City Public School and nankes 26 in top Maryland schools.Poly is known for having the Ingenuity Program, PLTW:Engineering, AP
                         Capstone, National Honor Society and many more. A STEM based school with many of clubs,such as

@@ -43,7 +43,7 @@
 
             <div>
                 <video class="jay" width="400" height="320" controls muted>
-                    <source src="assets/images/jaythedj2.mov" type="video/mp4">
+                    <source src="assets/images/jaythedj" type="video/mp4">
                     <source src="jaythedj2.ogg" type="video/ogg">
                 </video>
                 <figcaption>DJ Jay performing at a local hookah longe.</figcaption>
