@@ -5,10 +5,10 @@
 
     <main id="enjoyment">
         <!-- copy grid layout from index -->
-        <div id="culture-structure">
-            <h3>Enjoy The Stay</h3>
+        <h3>Enjoy The Stay</h3>
+        <div id="enjoyment-structure">
             <p><strong>Select a section below to explore.</strong></p>
-            <div class="culture-grid">
+            <div class="enjoyment-grid">
                 <button class="section" type="button" onclick="window.location.href='activities.php'" value="Activities">Activities </button>
     
                 <button class="section" type="button" onclick="window.location.href='dining.php'" value="Dining">Best Dining</button>

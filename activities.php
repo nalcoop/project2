@@ -59,14 +59,14 @@
                 <figcaption>Located at 6802 Eastern Ave. Offers hands-on learning for all ages.</figcaption>
             </figure>
 
-            <figure>
+            <figure id="twoStudio">
+            <h3>Two 7 Studio</h3>
                 <video class="twoStudio" width="400" height="320" controls muted>
                     <source src="assets/images/twoStudio.mp4" type="video/mp4">
                 </video>
                 <video class="twoStudio" width="400" height="320" controls muted>
                     <source src="assets/images/twoStudio2.mp4" type="video/mp4">
                 </video>
-                <h3>Two 7 Studio</h3>
                 <figcaption>Located at 
                     A Black-owned gallery for guided art classes and events.</figcaption>
             </figure>       
