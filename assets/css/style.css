@@ -47,6 +47,9 @@ figcaption,li,p,a {
     font-size: 1rem;
 }
 
+strong{
+    text-align: center;
+}
 
 #music,#art, #home, #school, #sports, #references {
     display: flex;
@@ -63,6 +66,8 @@ figcaption,li,p,a {
     color: #FEF8F4;
     padding: 16px;
     font-size: 16px;
+    height:100px;
+    width:250px;
     border: 1px solid #210B2C;
 }
 
@@ -75,11 +80,12 @@ figcaption,li,p,a {
     margin-left:auto;
     margin-right:auto;
     max-width: 500px;
-    background: #DBDBDB;
+    background-color:#FEF8F4;
     padding: 30px 30px 20px 30px;
     font:"Merriweather", serif;
     color: #666;
     border-radius: 5px;
+    border:2px #01143c solid;
     font-size: 1rem;
 }
 .blue h1 {
@@ -109,8 +115,7 @@ figcaption,li,p,a {
 .blue input[type="text"], 
 .blue input[type="email"],
 .blue input[type="date"],  
-.blue input[type="number"], 
-.blue input[type="range"], 
+.blue input[type="number"],  
 .blue textarea, 
 .blue select {
     color: #555;
@@ -160,24 +165,13 @@ legend{
 	cursor:pointer;
     background-color:#0e0069;
 }
-.indent{
-    max-width: 500px;
+.indent textarea{
+    height:200px;
+    width:250px;
+    padding-bottom: 10px;
 }
-.indent>span:first-child{
-    position: relative;
 
-    max-width:500px;
-    padding: 0px;
-    margin:0px;
-}
-.indent>span:last-child{
-    position: relative;
-    left:500px;
-    top:-50px;
-    padding-top:20px;
-    margin-top:20px;
-    max-width:500px;
-}
+
 
 .carousel {
     position: relative;
@@ -453,11 +447,7 @@ main{
         flex-direction: column;
     }
 
-    .orioles,.ravens-img{
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-    }
+ 
     .ravens-img,
     .orioles,
     .graffiti,
@@ -482,12 +472,7 @@ main{
 
     }
 
-    #culture-structure>p{
-        display: flex;
-        flex-wrap: nowrap;
-        font-size:1rem;
-        text-align: center;
-    }
+
 
     #enjoyment-structure>p {
         display: flex;
@@ -627,12 +612,16 @@ p,a, li{
     grid-template-columns: auto auto;
 }
 
+
 .section {
     background-color: #210B2C;
-    color: white;
-    padding: 30px;
-    font-size: 12px;
+    color: #DBDBDB;
+    padding: 25px;
+    height: 150px;
+    width: 200px;
+    font-size: 1.4rem;
     border: 1px solid #210B2C;
+    text-align: center;
 }
 
 #home,
@@ -670,7 +659,7 @@ p,a, li{
 
 iframe{
     width:400px;
-    height:250px;
+    height:320px;
 }
 
 .poly-img, .BCC, .western,.BSA,.bard{
@@ -744,13 +733,7 @@ iframe{
             flex-direction: column;
         }
     
-        .ravens-img,
-        .orioles,
-        .artsdistrict,
-        .fedhill-img{
-            max-width: 35%;
-            max-height: 35%;
-        }
+
         
         /* music styles */
 
@@ -814,8 +797,7 @@ iframe{
             justify-content: center;
         }
   
-   
-    
+
         .section {
             background-color: #210B2C;
             color: #DBDBDB;
@@ -855,6 +837,7 @@ iframe{
                     "dropdown";
                 grid-gap: 40px;
                 grid-template-columns: auto auto;
+                justify-content: center;
         }
         #music {
             row-gap: 20px;
@@ -973,5 +956,16 @@ iframe{
         .poly{
             width:400px;
             height:320px;
+        }
+
+        /* sports page styles */
+        .oriolesStructure,.ravensStructure{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        .ravens-img,
+        .orioles{
+            max-width: 35%;
+            max-height: 35%;
         }
     }

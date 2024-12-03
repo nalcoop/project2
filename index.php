@@ -12,9 +12,8 @@
         <div id="home-structure">
             <p><strong>Select a section below to begin your adventure</strong></p>
             <div class="home-grid">
-                <button class="section" type="button" onclick="window.location.href='enjoyment.php'">How To Enjoy Your
-                    Stay</button>
-                <button class="section" type="button" onclick="window.location.href='culture.php'">Embracing The True
+                <button class="section" type="button" onclick="window.location.href='enjoyment.php'">Enjoy The Stay</button>
+                <button class="section" type="button" onclick="window.location.href='culture.php'">Embracing 
                     Baltimore</button>
                 <button class="section" type="button" onclick="window.location.href='learning.php'">Learning
                     Content</button>

@@ -62,9 +62,9 @@ function changeSlide(step, carouselId) {
 
   slides.forEach((slide,i)=>{
     slide.classList.remove("active");
-    if(i=== currentSlides[carouselId])
-        slide.classList.add("active");
-  
+    if(i=== currentSlides[carouselId]){
+      slide.classList.add("active");
+    }
   });
 
   updateCaptions(carouselId,currentSlides[carouselId]);
@@ -77,7 +77,7 @@ function updateCaptions(carouselId,slideIndex){
   captions.forEach((caption,index)=>{
   if(index=== slideIndex){
     caption.style.display="block";
-  } if(index!== slideIndex){
+  } else{
     caption.style.display="none";
   }
 });

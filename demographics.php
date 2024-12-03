@@ -6,14 +6,14 @@
   <!-- Update the graphs make them interactive on page load, if possible, hover effect maybe i could use the techniques he showed us for the lightbox and just have the numbers pop up -->
     <!-- Page Header -->
     <header>
-    <script>
+    <!-- <script>
   (g=>{var h,a,k,p="The Google Maps JavaScript API",c="google",l="importLibrary",q="__ib__",m=document,b=window;b=b[c]||(b[c]={});var d=b.maps||(b.maps={}),r=new Set,e=new URLSearchParams,u=()=>h||(h=new Promise(async(f,n)=>{await (a=m.createElement("script"));e.set("libraries",[...r]+"");for(k in g)e.set(k.replace(/[A-Z]/g,t=>"_"+t[0].toLowerCase()),g[k]);e.set("callback",c+".maps."+q);a.src=`https://maps.${c}apis.com/maps/api/js?`+e;d[q]=f;a.onerror=()=>h=n(Error(p+" could not load."));a.nonce=m.querySelector("script[nonce]")?.nonce||"";m.head.append(a)}));d[l]?console.warn(p+" only loads once. Ignoring:",g):d[l]=(f,...n)=>r.add(f)&&u().then(()=>d[l](f,...n))})({
     key: "AIzaSyDTu6mVUwgo7qk271gipyAU_hCvLy0RDaE&signature=5htl5-2nuZxiqCPrtZpYODdfy5M=",
     v: "weekly",
     // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
     // Add other bootstrap parameters as needed, using camel case.
   });
-</script>
+</script> -->
         <h2>Demographics</h2>
     </header>
     
@@ -44,7 +44,7 @@
             <h3>Geographic Location</h3>
             <figure>
                 <div id="map">
-                <iframe class="map" src="https://www.google.com/maps/d/u/0/embed?mid=1mfdSrTvd70q1aW4aw1jc5_CozGELvD0&ehbc=2E312F" width="640" height="480"></iframe>"    width="640" height="480"></iframe>
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1mfdSrTvd70q1aW4aw1jc5_CozGELvD0&ehbc=2E312F" width="640" height="480"></iframe>
                 </div>
            
                 <figcaption>
